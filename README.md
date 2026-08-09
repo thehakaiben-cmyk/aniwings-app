@@ -1,121 +1,104 @@
-# 🚀 AniWings — Ad-Free Anime Streaming Client
+<p align="center">
+  <img src="public/images/logo.png" width="140" alt="AniWings Logo" style="border-radius: 20px;">
+</p>
 
-AniWings is a free, high-performance anime streaming client optimized for Android Mobiles, Tablets, and Smart TVs. Designed for anime lovers, AniWings offers ad-free streaming, dual-audio options (SUB/DUB), daily simulcast updates, and personalized library tracking without requiring sign-ups or invasive permissions.
+<h1 align="center">AniWings — Ad-Free Anime Streaming Client</h1>
 
-This repository contains the source code for the **AniWings Official Web Portal & Download Hub**.
+<p align="center">
+  <b>Stream Thousands of Anime Episodes in HD with Zero Ads, No Sign-ups, and Dual Audio Options</b>
+</p>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/aniwings.apk">
+    <img src="https://img.shields.io/badge/Download-Android%20APK-E25B73?style=for-the-badge&logo=android&logoColor=white" height="42" alt="Download Android APK">
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/aniwings.apk">
+    <img src="https://img.shields.io/badge/Download-Android%20TV-3DDC84?style=for-the-badge&logo=androidtv&logoColor=white" height="42" alt="Download Android TV">
+  </a>
+  &nbsp;
+  <a href="https://ani-wings.web.app/">
+    <img src="https://img.shields.io/badge/Visit-Official%20Website-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white" height="42" alt="Visit Official Website">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="public/images/app-home.jpg" width="45%" alt="AniWings App Home Screen">
+  &nbsp;
+  <img src="public/images/discover.jpg" width="45%" alt="AniWings App Discovery Screen">
+</p>
+
+---
+
+## 🌟 About AniWings
+
+**AniWings** is a dedicated, ad-free anime client engineered for Android Mobiles, Tablets, and Smart TVs. It brings together thousands of HD anime series, movies, and current seasonal simulcasts into a clean, modern interface.
+
+We prioritize user privacy and a seamless watching experience:
+- 🚫 **No Sign-ups Required**: Watch your favorite shows instantly without creating an account or providing email addresses.
+- 🛑 **Zero Ads & Pop-ups**: Experience uninterrupted playback without redirect ads or intrusive banners.
+- 🔒 **100% Safe & Secure**: Operates without root access, tracking services, or background telemetry.
 
 ---
 
 ## 📥 Download & Installation Guide
 
-You can download the latest official releases of AniWings directly from the website or via the links below:
-
-| Platform | Recommended Build | Installation Method | Status |
-| :--- | :--- | :--- | :--- |
-| **Android Mobile & Tablet** | `Android APK` | Direct APK Install | 🟢 Available |
-| **Android TV & TV Boxes** | `Android TV APK` | Sideload / Downloader App | 🟢 Available |
-| **iOS (iPhone & iPad)** | `iOS (IPA)` | SideStore / AltStore | 🟡 Coming Soon |
+| Platform | Download Link | Installation Method |
+| :--- | :--- | :--- |
+| **Android Mobiles & Tablets** | [**Download APK**](https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/aniwings.apk) | Direct APK Installation |
+| **Android TV & TV Boxes** | [**Download TV APK**](https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/aniwings.apk) | Downloader App / USB Sideloading |
+| **iOS (iPhone / iPad)** | *Coming Soon* | SideStore / AltStore |
 
 ---
 
 ### 📱 Installing on Android Phones & Tablets
 
-1. **Download the APK**: Fetch the latest `.apk` installer file from the Download section on the website.
-2. **Enable Unknown Sources**:
-   - Go to your device **Settings** > **Security** (or **Privacy / Apps & Notifications**).
-   - Enable **Install from Unknown Sources** or allow installation permissions for your web browser / file manager.
-3. **Install & Launch**:
-   - Open your device's **Downloads** folder or File Manager.
-   - Tap the `aniwings.apk` file and select **Install**.
-   - Open **AniWings** and start watching immediately!
+1. **Download APK**: Tap the [**Download APK**](https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/aniwings.apk) button above to save the file onto your device.
+2. **Allow Installation**:
+   - Open **Settings** > **Security** (or **Privacy / Apps & Notifications**).
+   - Turn on **Install from Unknown Sources** for your Browser or File Manager.
+3. **Install**: Open your **Downloads** folder, tap `aniwings.apk`, and press **Install**.
 
 ---
 
 ### 📺 Installing on Android TV & Smart TV Boxes
 
-1. **Using the Downloader App (Recommended)**:
-   - Install **Downloader by AFTVnews** from the Google Play Store on your TV.
-   - Launch Downloader and enter the direct URL to the AniWings TV APK file.
-   - Download the APK, grant installation permissions when prompted, and install.
-2. **Sideloading via USB**:
-   - Download the TV-optimized APK file on your computer or phone.
-   - Copy the file to a USB flash drive and insert it into your Android TV box.
-   - Use a File Manager app (e.g., *AnExplorer* or *File Commander*) on your TV to open the USB drive and install the APK.
-3. **Remote Navigation**:
-   - The Android TV build includes custom remote-compatible navigation for smooth D-pad control.
+#### Method 1: Via Downloader App (Easiest)
+1. Install **Downloader by AFTVnews** from the Google Play Store on your TV.
+2. Open Downloader and enter the direct URL to the `.apk` file or visit `https://ani-wings.web.app`.
+3. Download the TV-optimized APK and follow the prompt to install.
+
+#### Method 2: Via USB Drive
+1. Download the `aniwings.apk` file on your computer or phone.
+2. Copy the file to a USB flash drive and plug it into your Android TV box.
+3. Use a file manager app on your TV (such as *AnExplorer* or *File Commander*) to open the USB drive and install the file.
 
 ---
 
-## ✨ Features Highlight
+## ✨ Key Features
 
-- 🛡️ **Zero Advertisements**: Enjoy 100% ad-free, pop-up-free streaming with no video interruptions.
-- 🔒 **Complete Privacy**: No login, sign-up, or tracking required. Operates without background telemetry or intrusive permissions.
-- 🌐 **Dual Audio Toggles**: Switch between English Subtitles (**SUB**) and English Voiceover (**DUB**) directly inside the player.
-- ⚡ **Buffering-Free Engine**: High-speed CDN video delivery for crisp HD streaming with minimal latency.
-- 📅 **Daily Simulcast Updates**: Stream ongoing seasonal anime episodes synced with Japanese TV broadcast schedules.
-- ⭐ **Custom Library Tracking**: Save your favorite titles, keep track of watched episodes, and build custom watchlists.
-- 📺 **Smart TV Optimization**: Dedicated layout engineered for Android TV screens and remote controls.
-
----
-
-## 🛠️ Web Portal Architecture & Tech Stack
-
-The official web portal is built with modern frontend tools for speed, SEO, and slick UI performance:
-
-- **Framework**: React 19 + React Router v7
-- **Bundler & Build Tool**: Vite
-- **Styling**: Modern Vanilla CSS Design System with responsive grid layouts, glassmorphism, and smooth animations
-- **Iconography**: Remixicon (`remixicon`)
-- **Linter**: Oxlint
+- 🛡️ **Ad-Free Streaming**: Pure entertainment without pop-ups, redirects, or video advertisements.
+- 🗣️ **Dual Audio Toggles**: Switch effortlessly between English Subtitles (**SUB**) and English Dubbed audio (**DUB**).
+- ⚡ **High-Speed CDN**: Fast streaming servers optimized to eliminate buffering and loading delays.
+- 📅 **Daily Simulcasts**: Updated daily with new episodes fresh from Japanese TV broadcasts.
+- ⭐ **Personal Watchlists**: Easily save your favorite anime, track watched episodes, and resume playback.
+- 📺 **TV Remote Compatibility**: Fully customizable interface built specifically for Smart TV D-pad controllers.
 
 ---
 
-## 💻 Local Development Setup
+## 👥 Join the Community
 
-To run the web portal locally on your machine:
+Stay connected for new releases, announcements, and support:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/senthil-prabhu-sudo/aniwings-app.git
-   cd aniwings-app
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:5173` in your browser to preview the site with Hot Module Replacement (HMR).
-
-4. **Build for Production**:
-   ```bash
-   npm run build
-   ```
-
-5. **Preview Production Build**:
-   ```bash
-   npm run preview
-   ```
-
----
-
-## 🤝 Community & Support
-
-Join our official community channels to stay updated on new releases, feature updates, and support:
-
-- 💬 **Discord**: [Join AniWings Discord Server](https://discord.com/invite/w7KwAcyPG3)
-- 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_off)
+- 💬 **Discord**: [Join AniWings Discord](https://discord.com/invite/w7KwAcyPG3)
+- 📢 **Telegram**: [Join AniWings Telegram](https://t.me/aniwings_off)
 - 🔴 **Reddit**: [r/AniWings_Official](https://www.reddit.com/r/AniWings_Official/)
-- 🌐 **Web App**: [Visit AniWings Web App](https://ani-wings.web.app/)
+- 🌐 **Official Web App**: [ani-wings.web.app](https://ani-wings.web.app/)
 
 ---
 
-## 📜 License & Security Notice
-
-AniWings is strictly built for community entertainment and privacy. The app does not require root access, sensitive device permissions, or background tracking services.
-
-*Built with ❤️ for anime lovers everywhere.*
+<p align="center">
+  <i>Built with ❤️ for anime lovers worldwide.</i>
+</p>
