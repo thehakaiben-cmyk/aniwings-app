@@ -49,7 +49,7 @@ export default function Home({ version, updateData }) {
               <div className="version-badge">
                 <span className="badge-new">NEW</span>
                 <span className="version-text">
-                  Version {currentVersion} Stable is Live!
+                  Latest Stable Build is Live!
                 </span>
               </div>
               <h1 className="heading">
@@ -222,7 +222,7 @@ export default function Home({ version, updateData }) {
                 <i className="ri-android-line"></i>
               </div>
               <h3 className="dlu-title">Android APK</h3>
-              <p className="dlu-desc">v{currentVersion} • {fileSize} • All-in-one APK for Android Mobiles & Tablets.</p>
+              <p className="dlu-desc">{fileSize} • All-in-one APK for Android Mobiles & Tablets.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn">
                   <a 
@@ -231,7 +231,7 @@ export default function Home({ version, updateData }) {
                     className="btn btn-lg btn-pre"
                   >
                     <i className="ri-download-fill"></i>
-                    <span>Download APK (v{currentVersion})</span>
+                    <span>Download APK</span>
                   </a>
                 </div>
               </div>
@@ -243,7 +243,7 @@ export default function Home({ version, updateData }) {
                 <i className="ri-tv-line"></i>
               </div>
               <h3 className="dlu-title">Android TV</h3>
-              <p className="dlu-desc">v{currentVersion} • {fileSize} • Custom remote-compatible layout for smart TVs & TV boxes.</p>
+              <p className="dlu-desc">{fileSize} • Custom remote-compatible layout for smart TVs & TV boxes.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn">
                   <a 
@@ -252,7 +252,7 @@ export default function Home({ version, updateData }) {
                     className="btn btn-lg btn-pre"
                   >
                     <i className="ri-download-fill"></i>
-                    <span>Download for TV (v{currentVersion})</span>
+                    <span>Download for TV</span>
                   </a>
                 </div>
               </div>
@@ -291,7 +291,7 @@ export default function Home({ version, updateData }) {
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                 <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                   <i className="ri-checkbox-circle-line" style={{ color: 'var(--accent-primary)' }}></i>
-                  Latest Build Highlights (v{currentVersion})
+                  Latest Build Highlights
                 </h4>
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                   Released: {updatedAt}
