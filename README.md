@@ -24,22 +24,6 @@
 
 ---
 
-## 📱 App Preview
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/images/app-home.jpg" width="45%" alt="AniWings App Home Screen">
-  &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/images/app-login.jpg" width="45%" alt="AniWings App Detail Screen">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/images/discover.jpg" width="45%" alt="Discover Anime Feature">
-  &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/senthil-prabhu-sudo/aniwings-app/main/public/images/secure.jpg" width="45%" alt="Secure & Safe Feature">
-</p>
-
----
-
 ## 🌟 About AniWings
 
 **AniWings** is a dedicated, ad-free anime client engineered for Android Mobiles, Tablets, and Smart TVs. It brings together thousands of HD anime series, movies, and current seasonal simulcasts into a clean, modern interface.
