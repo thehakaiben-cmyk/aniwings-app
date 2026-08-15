@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "url": "/aniwings.apk",
-  "tvUrl": "/aniwings.apk",
+  "url": "https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.0/aniwings.apk",
+  "tvUrl": "https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.0/aniwings.apk",
   "mandatory": false,
   "releaseNotes": "Initial stable release of AniWings - featuring ad-free anime streaming, dual audio toggles (SUB/DUB), custom library tracking, and high-performance playback.",
   "minVersion": "1.0.0",
