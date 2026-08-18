@@ -11,8 +11,8 @@ const DEFAULT_UPDATE_DATA = {
   mandatory: false,
   releaseNotes: 'Initial stable release of AniWings - featuring ad-free anime streaming, dual audio toggles (SUB/DUB), custom library tracking, and high-performance playback.',
   minVersion: '1.0.0',
-  fileSize: '61.8 MB',
-  updatedAt: '2026-08-01',
+  fileSize: '65.2 MB',
+  updatedAt: '2026-08-18',
   appName: 'AniWings'
 };
 
