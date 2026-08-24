@@ -6,7 +6,7 @@ export default function Footer() {
   const socials = [
     {
       name: 'Discord',
-      href: 'https://discord.com/invite/w7KwAcyPG3',
+      href: 'https://discord.gg/5WBhW723uB',
       icon: 'ri-discord-fill'
     },
     {

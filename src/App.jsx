@@ -5,14 +5,14 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 const DEFAULT_UPDATE_DATA = {
-  version: '1.1.0',
-  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk',
-  tvUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk',
+  version: '1.1.1',
+  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk',
+  tvUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk',
   mandatory: true,
-  releaseNotes: 'AniWings v1.1.0 update - mandatory release featuring performance enhancements, stability fixes, and improved stream playback.',
-  minVersion: '1.1.0',
-  fileSize: '64.9 MB',
-  updatedAt: '2026-08-23',
+  releaseNotes: 'AniWings v1.1.1 update - mandatory release featuring key stability improvements, bug fixes, optimized video streaming playback, and enhanced UI performance.',
+  minVersion: '1.1.1',
+  fileSize: '65.2 MB',
+  updatedAt: '2026-08-24',
   appName: 'AniWings'
 };
 

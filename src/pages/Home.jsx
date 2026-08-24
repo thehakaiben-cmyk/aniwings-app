@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 
 export default function Home({ version, updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk';
-  const currentVersion = updateData?.version || version || '1.1.0';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk';
+  const currentVersion = updateData?.version || version || '1.1.1';
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const tvDownloadUrl = updateData?.tvUrl || downloadUrl;
-  const fileSize = updateData?.fileSize || '64.9 MB';
+  const fileSize = updateData?.fileSize || '65.2 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 

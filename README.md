@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk">
     <img src="https://img.shields.io/badge/Download-Android%20APK-E25B73?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk">
     <img src="https://img.shields.io/badge/Download-Android%20TV-3DDC84?style=for-the-badge&logo=androidtv&logoColor=white" height="45" alt="Download Android TV">
   </a>
   &nbsp;&nbsp;
@@ -44,15 +44,15 @@
 
 | Platform | Download Link | File Format | Status |
 | :--- | :--- | :--- | :--- |
-| **Android Mobiles & Tablets** | [📥 **Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk) | `.apk` | 🟢 Available |
-| **Android TV & Smart TV Boxes** | [📺 **Download Android TV APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk) | `.apk` | 🟢 Available |
+| **Android Mobiles & Tablets** | [📥 **Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk) | `.apk` | 🟢 Available |
+| **Android TV & Smart TV Boxes** | [📺 **Download Android TV APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk) | `.apk` | 🟢 Available |
 | **iOS (iPhone & iPad)** | *Coming Soon* | `.ipa` | 🟡 In Development |
 
 ---
 
 ### 📱 Installing on Android Phones & Tablets
 
-1. Tap [**Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.0/aniwings.apk) to download the APK file onto your device.
+1. Tap [**Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.1/aniwings.apk) to download the APK file onto your device.
 2. Go to **Settings** > **Security** (or **Apps & Notifications**) and enable **Install from Unknown Sources**.
 3. Open your **Downloads** folder, tap `aniwings.apk`, and click **Install**.
 
@@ -85,7 +85,7 @@
 
 ## 👥 Community & Official Links
 
-- 💬 **Discord**: [Join AniWings Discord Community](https://discord.com/invite/w7KwAcyPG3)
+- 💬 **Discord**: [Join AniWings Discord Community](https://discord.gg/5WBhW723uB)
 - 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_off)
 - 🔴 **Reddit**: [r/AniWings_Official Subreddit](https://www.reddit.com/r/AniWings_Official/)
 - 🌐 **Official Website**: [ani-wings.web.app](https://ani-wings.web.app/)
