@@ -236,7 +236,7 @@ export default function Home({ version, updateData }) {
                     className="btn btn-lg btn-pre dlu-split-btn"
                   >
                     <i className="ri-download-fill"></i>
-                    <span>Universal APK</span>
+                    <span>Universal APK <span className="btn-tag">All Devices</span></span>
                   </a>
                   <a 
                     href={arm64DownloadUrl} 
@@ -245,7 +245,7 @@ export default function Home({ version, updateData }) {
                     className="btn btn-lg btn-secondary dlu-split-btn"
                   >
                     <i className="ri-cpu-line"></i>
-                    <span>ARM64 v8a APK</span>
+                    <span>ARM64 v8a APK <span className="btn-tag">High-End</span></span>
                   </a>
                   <a 
                     href={armv7DownloadUrl} 
@@ -254,7 +254,7 @@ export default function Home({ version, updateData }) {
                     className="btn btn-lg btn-secondary dlu-split-btn"
                   >
                     <i className="ri-smartphone-line"></i>
-                    <span>armeabi-v7a APK</span>
+                    <span>armeabi-v7a APK <span className="btn-tag">Low-End</span></span>
                   </a>
                 </div>
               </div>
