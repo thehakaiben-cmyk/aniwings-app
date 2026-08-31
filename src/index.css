@@ -798,6 +798,21 @@ strong {
     justify-content: center;
 }
 
+.dlu-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.dlu-split-btn {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14.5px;
+    padding: 11px 18px;
+}
+
 .coming-soon {
     opacity: 0.55;
     background: rgba(255, 255, 255, 0.01);
@@ -1061,7 +1076,11 @@ strong {
 
     .dl-ul {
         grid-template-columns: 1fr;
-        max-width: 380px;
+        max-width: 400px;
+    }
+
+    .dlu-item {
+        padding: 32px 20px;
     }
 
     .section-title {

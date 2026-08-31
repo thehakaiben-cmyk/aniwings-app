@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 
 export default function Home({ version, updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk';
-  const currentVersion = updateData?.version || version || '1.1.2';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk';
+  const currentVersion = updateData?.version || version || '1.1.3';
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
+  const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
+  const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
+  const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
   const tvDownloadUrl = updateData?.tvUrl || downloadUrl;
   const fileSize = updateData?.fileSize || '67.7 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
@@ -222,41 +225,55 @@ export default function Home({ version, updateData }) {
               <div className="dlu-icon">
                 <i className="ri-android-line"></i>
               </div>
-              <h3 className="dlu-title">Android APK</h3>
-              <p className="dlu-desc">{fileSize} • All-in-one APK for Android Mobiles & Tablets.</p>
+              <h3 className="dlu-title">Android Mobile</h3>
+              <p className="dlu-desc">{fileSize} • Select build for Android Mobiles & Tablets.</p>
               <div className="dlu-detail">
-                <div className="dlu-btn">
+                <div className="dlu-btn-group">
                   <a 
-                    href={downloadUrl} 
+                    href={universalDownloadUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-lg btn-pre"
+                    className="btn btn-lg btn-pre dlu-split-btn"
                   >
                     <i className="ri-download-fill"></i>
-                    <span>Download APK</span>
+                    <span>Universal APK</span>
+                  </a>
+                  <a 
+                    href={arm64DownloadUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-cpu-line"></i>
+                    <span>ARM64 v8a APK</span>
+                  </a>
+                  <a 
+                    href={armv7DownloadUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-smartphone-line"></i>
+                    <span>armeabi-v7a APK</span>
                   </a>
                 </div>
               </div>
             </div>
 
             {/* Android TV */}
-            <div className="dlu-item">
+            <div className="dlu-item coming-soon">
+              <span className="coming-soon-badge">In Development</span>
               <div className="dlu-icon">
                 <i className="ri-tv-line"></i>
               </div>
               <h3 className="dlu-title">Android TV</h3>
-              <p className="dlu-desc">{fileSize} • Custom remote-compatible layout for smart TVs & TV boxes.</p>
+              <p className="dlu-desc">Custom remote-compatible layout for smart TVs & TV boxes. Currently in development.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn">
-                  <a 
-                    href={tvDownloadUrl} 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-lg btn-pre"
-                  >
+                  <button className="btn btn-lg btn-pre" disabled>
                     <i className="ri-download-fill"></i>
                     <span>Download for TV</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
