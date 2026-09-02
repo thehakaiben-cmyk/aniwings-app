@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Admin from './pages/Admin';
 
 const DEFAULT_UPDATE_DATA = {
   version: '1.1.3',
@@ -47,22 +48,31 @@ function App() {
 
   return (
     <Router>
-      <div className="app-container">
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                updateData={updateData}
-                version={updateData.version}
-              />
-            }
-          />
-        </Routes>
-        <Footer />
-      </div>
+      <AppShell updateData={updateData} />
     </Router>
+  );
+}
+
+function AppShell({ updateData }) {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
+  return (
+    <div className={`app-container${isAdminRoute ? ' admin-shell' : ''}`}>
+      {!isAdminRoute && <Navbar />}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              updateData={updateData}
+            />
+          }
+        />
+        <Route path="/admin/*" element={<Admin />} />
+      </Routes>
+      {!isAdminRoute && <Footer />}
+    </div>
   );
 }
 

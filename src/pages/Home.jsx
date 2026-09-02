@@ -1,18 +1,31 @@
 import { useEffect } from 'react';
 
-export default function Home({ version, updateData }) {
+let visitTracked = false;
+
+export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk';
-  const currentVersion = updateData?.version || version || '1.1.3';
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
   const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
-  const tvDownloadUrl = updateData?.tvUrl || downloadUrl;
   const fileSize = updateData?.fileSize || '67.7 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
   useEffect(() => {
+    if (!visitTracked) {
+      visitTracked = true;
+      fetch('/api/analytics/visit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        keepalive: true,
+        body: JSON.stringify({
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        }),
+      }).catch(() => {});
+    }
+
     // Scroll Reveal Animation via IntersectionObserver
     const observerOptions = {
       threshold: 0.1,
@@ -42,6 +55,10 @@ export default function Home({ version, updateData }) {
       downloadSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const trackedDownloadUrl = (url, variant) => (
+    `/api/download?variant=${encodeURIComponent(variant)}&url=${encodeURIComponent(url)}`
+  );
 
   return (
     <div>
@@ -230,7 +247,7 @@ export default function Home({ version, updateData }) {
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
-                    href={universalDownloadUrl} 
+                    href={trackedDownloadUrl(universalDownloadUrl, 'universal')} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-pre dlu-split-btn"
@@ -239,7 +256,7 @@ export default function Home({ version, updateData }) {
                     <span>Universal APK <span className="btn-tag">All Devices</span></span>
                   </a>
                   <a 
-                    href={arm64DownloadUrl} 
+                    href={trackedDownloadUrl(arm64DownloadUrl, 'arm64')} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
@@ -248,7 +265,7 @@ export default function Home({ version, updateData }) {
                     <span>ARM64 v8a APK <span className="btn-tag">High-End</span></span>
                   </a>
                   <a 
-                    href={armv7DownloadUrl} 
+                    href={trackedDownloadUrl(armv7DownloadUrl, 'armv7')} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
