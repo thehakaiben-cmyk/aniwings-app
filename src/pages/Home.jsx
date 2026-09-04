@@ -345,31 +345,58 @@ export default function Home({ updateData }) {
             </div>
           </div>
 
-          {/* Release Notes Card */}
-          {releaseNotes && (
-            <div className="release-notes-card" style={{
-              marginTop: '2.5rem',
-              padding: '1.5rem 2rem',
-              borderRadius: '16px',
-              background: 'rgba(255, 255, 255, 0.02)',
-              border: '1px solid rgba(255, 255, 255, 0.06)',
-              textAlign: 'left',
-              backdropFilter: 'blur(10px)'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
-                <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                  <i className="ri-checkbox-circle-line" style={{ color: 'var(--accent-primary)' }}></i>
-                  Latest Build Highlights
-                </h4>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                  Released: {updatedAt}
-                </span>
+          {/* Release Notes Cards */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
+            {/* Mobile Release Notes */}
+            {releaseNotes && (
+              <div className="release-notes-card" style={{
+                padding: '1.5rem 2rem',
+                borderRadius: '16px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+                textAlign: 'left',
+                backdropFilter: 'blur(10px)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
+                    <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
+                    Mobile v{updateData?.version || '1.1.3'} Release Notes
+                  </h4>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    Released: {updatedAt}
+                  </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                  {releaseNotes}
+                </p>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
-                {releaseNotes}
-              </p>
-            </div>
-          )}
+            )}
+
+            {/* TV Release Notes */}
+            {tvData?.releaseNotes && (
+              <div className="release-notes-card" style={{
+                padding: '1.5rem 2rem',
+                borderRadius: '16px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+                textAlign: 'left',
+                backdropFilter: 'blur(10px)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
+                    <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
+                    Android TV v{tvData?.version || '1.2.0'} Release Notes
+                  </h4>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    Released: {tvData?.updatedAt || '2026-09-04'}
+                  </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                  {tvData.releaseNotes}
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
