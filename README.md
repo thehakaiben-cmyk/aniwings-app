@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/thehakaiben-cmyk/aniwings-app/main/public/images/logo.png" width="160" alt="AniWings App Icon" style="border-radius: 20px;">
+  <img src="public/images/logo.png" width="160" alt="AniWings App Icon" style="border-radius: 20px;">
 </p>
 
 <h1 align="center">AniWings — Ad-Free Anime Streaming Client</h1>
@@ -36,7 +36,7 @@
 
 | 🏠 Home | 🔍 Browse | 📅 Schedule | 🎬 Details |
 | :---: | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/thehakaiben-cmyk/aniwings-app/main/public/images/screenshot-home.jpg" width="220" alt="AniWings Home Screen"> | <img src="https://raw.githubusercontent.com/thehakaiben-cmyk/aniwings-app/main/public/images/screenshot-browse.jpg" width="220" alt="AniWings Browse Screen"> | <img src="https://raw.githubusercontent.com/thehakaiben-cmyk/aniwings-app/main/public/images/screenshot-schedule.jpg" width="220" alt="AniWings Schedule Screen"> | <img src="https://raw.githubusercontent.com/thehakaiben-cmyk/aniwings-app/main/public/images/screenshot-details.jpg" width="220" alt="AniWings Details Screen"> |
+| <img src="public/images/screenshot-home.jpg" width="220" alt="AniWings Home Screen"> | <img src="public/images/screenshot-browse.jpg" width="220" alt="AniWings Browse Screen"> | <img src="public/images/screenshot-schedule.jpg" width="220" alt="AniWings Schedule Screen"> | <img src="public/images/screenshot-details.jpg" width="220" alt="AniWings Details Screen"> |
 
 ---
 
@@ -53,6 +53,10 @@
 ---
 
 ### 📺 Android TV & Smart TV Boxes (v1.2.0)
+
+<p align="center">
+  <img src="public/images/tv_banner.png" width="600" alt="AniWings Android TV Banner" style="border-radius: 12px; margin-bottom: 16px;">
+</p>
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
