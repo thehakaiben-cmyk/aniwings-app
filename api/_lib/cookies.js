@@ -1,3 +1,4 @@
+export const ADMIN_SESSION_COOKIE = 'aniwings_admin_session';
 export const VISITOR_COOKIE = 'aniwings_visitor_id';
 
 export function parseCookies(req) {

@@ -101,7 +101,7 @@ async function redisRequest(command, endpoint = '') {
     headers: {
       Authorization: `Bearer ${REDIS_REST_TOKEN}`,
       'Content-Type': 'application/json',
-      'User-Agent': 'aniwings-analytics',
+      'User-Agent': 'codex-aniwings-admin',
     },
     body: JSON.stringify(command),
   });
@@ -121,7 +121,7 @@ async function redisPipeline(commands) {
     headers: {
       Authorization: `Bearer ${REDIS_REST_TOKEN}`,
       'Content-Type': 'application/json',
-      'User-Agent': 'aniwings-analytics',
+      'User-Agent': 'codex-aniwings-admin',
     },
     body: JSON.stringify(commands),
   });
