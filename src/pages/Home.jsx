@@ -4,6 +4,8 @@ let visitTracked = false;
 
 export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk';
+  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk';
+
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
@@ -11,6 +13,13 @@ export default function Home({ updateData }) {
   const fileSize = updateData?.fileSize || '67.7 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
+
+  const tvData = updateData?.tv;
+  const tvDownloadUrl = tvData?.url || updateData?.tvUrl || DEFAULT_TV_RELEASE_URL;
+  const tvUniversalDownloadUrl = tvData?.universalUrl || updateData?.tvUniversalUrl || tvDownloadUrl;
+  const tvArm64DownloadUrl = tvData?.arm64Url || updateData?.tvArm64Url || tvDownloadUrl;
+  const tvArmv7DownloadUrl = tvData?.armv7Url || updateData?.tvArmv7Url || tvDownloadUrl;
+  const tvFileSize = tvData?.fileSize || '67.4 MB';
 
   useEffect(() => {
     if (!visitTracked) {
@@ -278,19 +287,41 @@ export default function Home({ updateData }) {
             </div>
 
             {/* Android TV */}
-            <div className="dlu-item coming-soon">
-              <span className="coming-soon-badge">In Development</span>
+            <div className="dlu-item">
               <div className="dlu-icon">
                 <i className="ri-tv-line"></i>
               </div>
               <h3 className="dlu-title">Android TV</h3>
-              <p className="dlu-desc">Custom remote-compatible layout for smart TVs & TV boxes. Currently in development.</p>
+              <p className="dlu-desc">{tvFileSize} • Select build for Smart TVs & TV boxes.</p>
               <div className="dlu-detail">
-                <div className="dlu-btn">
-                  <button className="btn btn-lg btn-pre" disabled>
+                <div className="dlu-btn-group">
+                  <a 
+                    href={trackedDownloadUrl(tvUniversalDownloadUrl, 'tv-universal')} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-pre dlu-split-btn"
+                  >
                     <i className="ri-download-fill"></i>
-                    <span>Download for TV</span>
-                  </button>
+                    <span>Universal TV APK <span className="btn-tag">All TVs</span></span>
+                  </a>
+                  <a 
+                    href={trackedDownloadUrl(tvArm64DownloadUrl, 'tv-arm64')} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-cpu-line"></i>
+                    <span>ARM64 v8a TV APK <span className="btn-tag">High-End</span></span>
+                  </a>
+                  <a 
+                    href={trackedDownloadUrl(tvArmv7DownloadUrl, 'tv-armv7')} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-tv-2-line"></i>
+                    <span>armeabi-v7a TV APK <span className="btn-tag">Low-End</span></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -344,4 +375,3 @@ export default function Home({ updateData }) {
     </div>
   );
 }
-

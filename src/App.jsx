@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Admin from './pages/Admin';
 
 const DEFAULT_UPDATE_DATA = {
   version: '1.1.3',
@@ -11,13 +10,29 @@ const DEFAULT_UPDATE_DATA = {
   universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk',
   arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-arm64-v8a.apk',
   armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-armeabi-v7a.apk',
-  tvUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk',
+  tvUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk',
+  tvUniversalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk',
+  tvArm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-arm64-v8a.apk',
+  tvArmv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-armeabi-v7a.apk',
   mandatory: true,
-  releaseNotes: 'AniWings v1.1.3 update - Includes Universal build (for all devices), ARM64-v8a (for high-end mobiles), and armeabi-v7a (for low-end devices). Features added extra streaming servers, UI improvements, and optimized bug fixes. Note: Android TV version is currently in development.',
+  releaseNotes: 'AniWings v1.1.3 update - Includes Universal build (for all devices), ARM64-v8a (for high-end mobiles), and armeabi-v7a (for low-end devices). Features added extra streaming servers, UI improvements, and optimized bug fixes.',
   minVersion: '1.1.3',
   fileSize: '67.2 MB',
   updatedAt: '2026-08-31',
-  appName: 'AniWings'
+  appName: 'AniWings',
+  tv: {
+    version: '1.2.0',
+    url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk',
+    universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk',
+    arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-arm64-v8a.apk',
+    armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-armeabi-v7a.apk',
+    mandatory: true,
+    releaseNotes: 'AniWings TV v1.2.0 Release - Dedicated Android TV edition featuring full D-pad remote navigation, high-performance video player, dual audio support (SUB/DUB), zero ads, and TV dashboard UI.',
+    minVersion: '1.2.0',
+    fileSize: '67.4 MB',
+    updatedAt: '2026-09-04',
+    appName: 'AniWings TV'
+  }
 };
 
 function App() {
@@ -54,12 +69,9 @@ function App() {
 }
 
 function AppShell({ updateData }) {
-  const location = useLocation();
-  const isAdminRoute = location.pathname.startsWith('/admin');
-
   return (
-    <div className={`app-container${isAdminRoute ? ' admin-shell' : ''}`}>
-      {!isAdminRoute && <Navbar />}
+    <div className="app-container">
+      <Navbar />
       <Routes>
         <Route
           path="/"
@@ -69,12 +81,10 @@ function AppShell({ updateData }) {
             />
           }
         />
-        <Route path="/admin/*" element={<Admin />} />
       </Routes>
-      {!isAdminRoute && <Footer />}
+      <Footer />
     </div>
   );
 }
 
 export default App;
-

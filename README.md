@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk">
-    <img src="https://img.shields.io/badge/Download-Android%20APK-E25B73?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk">
+    <img src="https://img.shields.io/badge/Download-Android%20Mobile-E25B73?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20TV-3DDC84?style=for-the-badge&logo=androidtv&logoColor=white" height="45" alt="Download Android TV">
   </a>
   &nbsp;&nbsp;
@@ -42,19 +42,39 @@
 
 ## 📥 Direct Download & Installation
 
+### 📱 Android Mobiles & Tablets (v1.1.3)
+
+| Build Variant | Architecture | Download Link | Status |
+| :--- | :--- | :--- | :--- |
+| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk) | 🟢 Live |
+| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-armeabi-v7a.apk) | 🟢 Live |
+
+---
+
+### 📺 Android TV & Smart TV Boxes (v1.2.0)
+
+| Build Variant | Architecture | Download Link | Status |
+| :--- | :--- | :--- | :--- |
+| **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk) | 🟢 Live |
+| **ARM64-v8a TV APK** | High-End Smart TVs | [⚡ **Download TV ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a TV APK** | Low-End / Legacy TV Boxes | [🕹️ **Download TV ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-armeabi-v7a.apk) | 🟢 Live |
+
+---
+
+### 🍏 iOS (iPhone & iPad)
+
 | Platform | Download Link | File Format | Status |
 | :--- | :--- | :--- | :--- |
-| **Android Mobiles & Tablets** | [📥 **Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk) | `.apk` | 🟢 Available |
-| **Android TV & Smart TV Boxes** | [📺 **Download Android TV APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk) | `.apk` | 🟢 Available |
 | **iOS (iPhone & iPad)** | *Coming Soon* | `.ipa` | 🟡 In Development |
 
 ---
 
 ### 📱 Installing on Android Phones & Tablets
 
-1. Tap [**Download Android APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.2/aniwings.apk) to download the APK file onto your device.
+1. Tap one of the **Android Mobile APK** links above to download the APK file onto your device.
 2. Go to **Settings** > **Security** (or **Apps & Notifications**) and enable **Install from Unknown Sources**.
-3. Open your **Downloads** folder, tap `aniwings.apk`, and click **Install**.
+3. Open your **Downloads** folder, tap the downloaded APK, and click **Install**.
 
 ---
 
@@ -62,11 +82,11 @@
 
 #### Option 1: Via Downloader App (Recommended)
 1. Install **Downloader by AFTVnews** from the Google Play Store on your Android TV.
-2. Open Downloader and enter `https://ani-wings.web.app` or the direct APK link.
+2. Open Downloader and enter `https://ani-wings.web.app` or one of the direct TV APK links above.
 3. Download the TV-optimized APK and follow the installation prompt.
 
 #### Option 2: Via USB Flash Drive
-1. Download `aniwings.apk` on a PC or phone.
+1. Download `aniwings-tv-v1.2.0-universal.apk` on a PC or phone.
 2. Transfer the file to a USB flash drive and insert it into your Android TV box.
 3. Use a file manager app on your TV (such as *AnExplorer* or *File Commander*) to open the USB drive and install.
 
