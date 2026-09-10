@@ -11,7 +11,7 @@ export default function Footer() {
     },
     {
       name: 'Telegram',
-      href: 'https://t.me/aniwings_off',
+      href: 'https://t.me/aniwings_community',
       icon: 'ri-telegram-fill'
     },
     {

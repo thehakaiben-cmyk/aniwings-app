@@ -110,7 +110,7 @@
 ## 👥 Community & Official Links
 
 - 💬 **Discord**: [Join AniWings Discord Community](https://discord.gg/5WBhW723uB)
-- 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_off)
+- 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_community)
 - 🔴 **Reddit**: [r/AniWings_Official Subreddit](https://www.reddit.com/r/AniWings_Official/)
 - 🌐 **Official Website**: [ani-wings.web.app](https://ani-wings.web.app/)
 
