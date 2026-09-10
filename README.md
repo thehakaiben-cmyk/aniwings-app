@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.4/AniWings-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20Mobile-E25B73?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20TV-3DDC84?style=for-the-badge&logo=androidtv&logoColor=white" height="45" alt="Download Android TV">
   </a>
   &nbsp;&nbsp;
@@ -42,17 +42,17 @@
 
 ## 📥 Direct Download & Installation
 
-### 📱 Android Mobiles & Tablets (v1.1.3)
+### 📱 Android Mobiles & Tablets (v1.1.4)
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
-| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk) | 🟢 Live |
-| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-arm64-v8a.apk) | 🟢 Live |
-| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-armeabi-v7a.apk) | 🟢 Live |
+| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.4/AniWings-universal.apk) | 🟢 Live |
+| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.4/AniWings-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.4/AniWings-armeabi-v7a.apk) | 🟢 Live |
 
 ---
 
-### 📺 Android TV & Smart TV Boxes (v1.2.0)
+### 📺 Android TV & Smart TV Boxes (v1.2.1)
 
 <p align="center">
   <img src="public/images/tv_banner.png" width="600" alt="AniWings Android TV Banner" style="border-radius: 12px; margin-bottom: 16px;">
@@ -60,9 +60,9 @@
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
-| **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk) | 🟢 Live |
-| **ARM64-v8a TV APK** | High-End Smart TVs | [⚡ **Download TV ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-arm64-v8a.apk) | 🟢 Live |
-| **armeabi-v7a TV APK** | Low-End / Legacy TV Boxes | [🕹️ **Download TV ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-armeabi-v7a.apk) | 🟢 Live |
+| **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-universal.apk) | 🟢 Live |
+| **ARM64-v8a TV APK** | High-End Smart TVs | [⚡ **Download TV ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a TV APK** | Low-End / Legacy TV Boxes | [🕹️ **Download TV ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-armeabi-v7a.apk) | 🟢 Live |
 
 ---
 
@@ -90,7 +90,7 @@
 3. Download the TV-optimized APK and follow the installation prompt.
 
 #### Option 2: Via USB Flash Drive
-1. Download `aniwings-tv-v1.2.0-universal.apk` on a PC or phone.
+1. Download `aniwings-tv-v1.2.1-universal.apk` on a PC or phone.
 2. Transfer the file to a USB flash drive and insert it into your Android TV box.
 3. Use a file manager app on your TV (such as *AnExplorer* or *File Commander*) to open the USB drive and install.
 

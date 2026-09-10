@@ -3,14 +3,14 @@ import { useEffect } from 'react';
 let visitTracked = false;
 
 export default function Home({ updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.3/AniWings-universal.apk';
-  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.0/aniwings-tv-v1.2.0-universal.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.1.4/AniWings-universal.apk';
+  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-universal.apk';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
   const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
-  const fileSize = updateData?.fileSize || '67.7 MB';
+  const fileSize = updateData?.fileSize || '122.4 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
@@ -19,7 +19,7 @@ export default function Home({ updateData }) {
   const tvUniversalDownloadUrl = tvData?.universalUrl || updateData?.tvUniversalUrl || tvDownloadUrl;
   const tvArm64DownloadUrl = tvData?.arm64Url || updateData?.tvArm64Url || tvDownloadUrl;
   const tvArmv7DownloadUrl = tvData?.armv7Url || updateData?.tvArmv7Url || tvDownloadUrl;
-  const tvFileSize = tvData?.fileSize || '67.4 MB';
+  const tvFileSize = tvData?.fileSize || '70.8 MB';
 
   useEffect(() => {
     if (!visitTracked) {
@@ -360,7 +360,7 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.1.3'} Release Notes
+                    Mobile v{updateData?.version || '1.1.4'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}
@@ -385,10 +385,10 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
-                    Android TV v{tvData?.version || '1.2.0'} Release Notes
+                    Android TV v{tvData?.version || '1.2.1'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    Released: {tvData?.updatedAt || '2026-09-04'}
+                    Released: {tvData?.updatedAt || '2026-09-10'}
                   </span>
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
