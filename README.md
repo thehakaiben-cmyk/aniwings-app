@@ -54,10 +54,6 @@
 
 ### 📺 Android TV & Smart TV Boxes (v1.2.1)
 
-<p align="center">
-  <img src="public/images/tv_banner.png" width="600" alt="AniWings Android TV Banner" style="border-radius: 12px; margin-bottom: 16px;">
-</p>
-
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
 | **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.1/aniwings-tv-v1.2.1-universal.apk) | 🟢 Live |
