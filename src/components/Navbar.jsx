@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('heading-content');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,10 +37,10 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const navLinks = [
-    { label: 'Home', href: '#heading-content', id: 'heading-content' },
-    { label: 'About', href: '#section-about', id: 'section-about' },
-    { label: 'Features', href: '#section-features', id: 'section-features' },
-    { label: 'Download', href: '#section-download', id: 'section-download' },
+    { label: 'Home', href: '#heading-content', id: 'heading-content', icon: 'ri-home-4-line', activeIcon: 'ri-home-4-fill' },
+    { label: 'About', href: '#section-about', id: 'section-about', icon: 'ri-information-line', activeIcon: 'ri-information-fill' },
+    { label: 'Features', href: '#section-features', id: 'section-features', icon: 'ri-sparkling-2-line', activeIcon: 'ri-sparkling-2-fill' },
+    { label: 'Download', href: '#section-download', id: 'section-download', icon: 'ri-download-2-line', activeIcon: 'ri-download-2-fill' },
   ];
 
   const handleNavClick = (e, href) => {
@@ -58,83 +58,105 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
-      <div className="navbar__inner">
+    <>
+      <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
+        <div className="navbar__inner">
 
-        {/* Column 1 — Logo */}
-        <Link to="/" className="navbar__logo">
-          <img src="/images/logo.png" alt="AniWings" />
-          <span className="navbar__logo-text">
-            Ani<span>Wings</span>
-          </span>
-        </Link>
+          {/* Column 1 — Logo */}
+          <Link to="/" className="navbar__logo">
+            <img src="/images/logo.png" alt="AniWings" />
+            <span className="navbar__logo-text">
+              Ani<span>Wings</span>
+            </span>
+          </Link>
 
-        {/* Column 2 — Desktop Nav Links (true center) */}
-        <ul className="navbar__links">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`navbar__link${activeSection === link.id ? ' active' : ''}`}
-                onClick={(e) => handleNavClick(e, link.href)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          {/* Column 2 — Desktop Nav Links */}
+          <ul className="navbar__links">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`navbar__link${activeSection === link.id ? ' active' : ''}`}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Column 3 — Right side: Follow CTA + Hamburger */}
-        <div className="navbar__right">
-          <a
-            href="#footer"
-            className="navbar__cta"
-            onClick={handleFollowClick}
-            id="navbar-follow-btn"
-          >
-            <i className="ri-heart-line"></i>
-            Follow
-          </a>
-
-          <button
-            className={`navbar__hamburger${menuOpen ? ' open' : ''}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-
-      </div>
-
-      {/* Mobile Menu */}
-      <div className={`navbar__mobile${menuOpen ? '' : ' hidden'}`}>
-        <div className="navbar__mobile-links">
-          {navLinks.map((link) => (
+          {/* Column 3 — Right side: Follow CTA + Hamburger */}
+          <div className="navbar__right">
             <a
-              key={link.href}
-              href={link.href}
-              className={`navbar__mobile-link${activeSection === link.id ? ' active' : ''}`}
-              onClick={(e) => handleNavClick(e, link.href)}
+              href="#footer"
+              className="navbar__cta"
+              onClick={handleFollowClick}
+              id="navbar-follow-btn"
             >
-              <i className={`ri-${link.id === 'heading-content' ? 'home-4' : link.id === 'section-about' ? 'information' : link.id === 'section-features' ? 'sparkles' : 'download'}-line`}></i>
-              {link.label}
+              <i className="ri-heart-line"></i>
+              Follow
             </a>
-          ))}
+
+            <button
+              className={`navbar__hamburger${menuOpen ? ' open' : ''}`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
         </div>
-        <div className="navbar__mobile-footer">
-          <a
-            href="#footer"
-            className="navbar__mobile-cta"
-            onClick={handleFollowClick}
-          >
-            <i className="ri-heart-line"></i>
-            Follow Us
-          </a>
+
+        {/* Mobile Navigation Drawer Overlay & Card */}
+        <div className={`navbar__mobile-backdrop${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(false)} />
+
+        <div className={`navbar__mobile${menuOpen ? ' open' : ''}`}>
+          <div className="navbar__mobile-header">
+            <div className="navbar__mobile-brand">
+              <img src="/images/logo.png" alt="AniWings" />
+              <span>Menu</span>
+            </div>
+            <button className="navbar__mobile-close" onClick={() => setMenuOpen(false)} aria-label="Close menu">
+              <i className="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div className="navbar__mobile-links">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.id;
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`navbar__mobile-link${isActive ? ' active' : ''}`}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                >
+                  <div className="navbar__mobile-link-icon">
+                    <i className={isActive ? link.activeIcon : link.icon}></i>
+                  </div>
+                  <span className="navbar__mobile-link-label">{link.label}</span>
+                  {isActive && <span className="navbar__mobile-active-dot" />}
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="navbar__mobile-footer">
+            <a
+              href="#footer"
+              className="navbar__mobile-cta"
+              onClick={handleFollowClick}
+            >
+              <i className="ri-heart-fill"></i>
+              <span>Follow Us</span>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
+
