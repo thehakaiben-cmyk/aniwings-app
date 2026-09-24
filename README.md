@@ -112,8 +112,8 @@
 - 💬 **Discord**: [Join AniWings Discord Community](https://discord.gg/5WBhW723uB)
 - 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_community)
 - 🔴 **Reddit**: [r/AniWings_Official Subreddit](https://www.reddit.com/r/AniWings_Official/)
-- 🌐 **Web Portal**: [aniwings-app.pages.dev](https://aniwings-app.pages.dev/)
-- 🎬 **Web Streaming Player**: [ani-wings.web.app](https://ani-wings.web.app/)
+- 🌐 **App download Portal**: [aniwings-app.pages.dev](https://aniwings-app.pages.dev/)
+- 🎬 **Web Streaming**: [ani-wings.web.app](https://ani-wings.web.app/)
 
 ---
 
