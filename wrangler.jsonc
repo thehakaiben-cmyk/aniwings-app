@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "aniwings-app-web",
+  "name": "aniwings-app",
   "compatibility_date": "2026-09-21",
   "assets": {
     "directory": "./dist",
