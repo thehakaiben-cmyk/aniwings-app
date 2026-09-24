@@ -199,9 +199,20 @@ export default function TvLogin() {
       });
     } catch (err) {
       console.error('Failed to authorize TV app in Firestore:', err);
-      setAuthError(
-        'Unable to complete pairing in Firebase Firestore. Please check internet connection or pairing code and try again.'
-      );
+      const isPermDenied =
+        err?.code === 'permission-denied' ||
+        err?.message?.toLowerCase().includes('permission') ||
+        err?.message?.toLowerCase().includes('insufficient');
+      if (isPermDenied) {
+        setAuthError(
+          'Firestore Permission Denied: The tv_pairings collection permission was missing in Firestore rules. Rules have now been deployed; please click Authorize again.'
+        );
+      } else {
+        setAuthError(
+          err?.message ||
+            'Unable to complete pairing in Firebase Firestore. Please check internet connection or pairing code and try again.'
+        );
+      }
     } finally {
       setAuthorizing(false);
     }
