@@ -1,8 +1,27 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+
+const TvLogin = lazy(() => import('./pages/TvLogin'));
+
+function PageLoader() {
+  return (
+    <div style={{
+      minHeight: '80vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '16px',
+      color: 'var(--text-secondary)'
+    }}>
+      <div className="tv-spinner" style={{ width: '32px', height: '32px', borderTopColor: 'var(--accent-primary)' }}></div>
+      <span style={{ fontSize: '14px', fontWeight: 500 }}>Loading TV Login Portal...</span>
+    </div>
+  );
+}
 
 const DEFAULT_UPDATE_DATA = {
   version: '1.2.0',
@@ -75,6 +94,30 @@ function AppShell({ updateData }) {
             <Home
               updateData={updateData}
             />
+          }
+        />
+        <Route
+          path="/tv"
+          element={
+            <Suspense fallback={<PageLoader />}>
+              <TvLogin />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <Suspense fallback={<PageLoader />}>
+              <TvLogin />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/auth"
+          element={
+            <Suspense fallback={<PageLoader />}>
+              <TvLogin />
+            </Suspense>
           }
         />
       </Routes>
