@@ -894,7 +894,7 @@ strong {
     }
 
     #heading-content {
-        padding: 120px 0 70px 0;
+        padding: 140px 0 70px 0;
     }
 
     .big-intro-content {
@@ -1209,25 +1209,25 @@ strong {
     }
 
     #heading-content {
-        padding: 104px 0 50px 0;
+        padding: clamp(160px, 22vh, 188px) 0 60px 0;
         background-position: center top;
     }
 
     .version-badge {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
 
     .heading {
-        font-size: 32px;
+        font-size: 34px;
         line-height: 1.25;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
         letter-spacing: -0.8px;
     }
 
     .description {
         font-size: 15px;
-        line-height: 1.6;
-        margin-bottom: 26px;
+        line-height: 1.65;
+        margin-bottom: 30px;
         max-width: 520px;
         margin-left: auto;
         margin-right: auto;
@@ -1235,7 +1235,7 @@ strong {
 
     .flex-btns {
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
         align-items: center;
         width: 100%;
     }
@@ -1243,10 +1243,10 @@ strong {
     .flex-btns .btn {
         width: 100%;
         max-width: 360px;
-        min-height: 52px;
+        min-height: 54px;
         justify-content: center;
         border-radius: 14px;
-        font-size: 15px;
+        font-size: 15.5px;
         font-weight: 600;
         margin-left: auto;
         margin-right: auto;
