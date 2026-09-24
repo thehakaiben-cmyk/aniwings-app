@@ -57,7 +57,7 @@ export default function Footer() {
                   transition: 'all 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'rgba(226, 91, 115, 0.1)';
+                  e.currentTarget.style.background = 'rgba(255, 42, 84, 0.1)';
                   e.currentTarget.style.borderColor = 'var(--accent-primary)';
                   e.currentTarget.style.color = 'var(--accent-primary)';
                 }}

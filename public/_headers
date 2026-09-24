@@ -1,0 +1,8 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+
+/update.json
+  Cache-Control: no-cache, no-store, must-revalidate, max-age=0
+  Access-Control-Allow-Origin: *

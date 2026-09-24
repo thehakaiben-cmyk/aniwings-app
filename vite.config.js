@@ -1,8 +1,8 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
-import fs from 'node:fs'
-import path from 'node:path'
-import { pathToFileURL } from 'node:url'
+import fs from 'fs'
+import path from 'path'
+import { pathToFileURL } from 'url'
 
 function localApiPlugin() {
   return {
@@ -11,14 +11,14 @@ function localApiPlugin() {
       const apiDir = path.resolve(process.cwd(), 'api')
 
       server.middlewares.use(async (req, res, next) => {
-        if (!req.url?.startsWith('/api/')) {
+        if (!req.url || !req.url.startsWith('/api/')) {
           next()
           return
         }
 
         const pathname = new URL(req.url, 'http://localhost').pathname
         const routePath = pathname.slice('/api/'.length).replace(/\/$/, '')
-        const handlerPath = path.resolve(apiDir, `${routePath}.js`)
+        const handlerPath = path.resolve(apiDir, routePath + '.js')
         const relativeHandlerPath = path.relative(apiDir, handlerPath)
 
         if (relativeHandlerPath.startsWith('..') || path.isAbsolute(relativeHandlerPath) || !fs.existsSync(handlerPath)) {
@@ -27,7 +27,7 @@ function localApiPlugin() {
         }
 
         try {
-          const moduleUrl = `${pathToFileURL(handlerPath).href}?t=${Date.now()}`
+          const moduleUrl = pathToFileURL(handlerPath).href + '?t=' + Date.now()
           const mod = await import(moduleUrl)
           await mod.default(req, res)
         } catch (err) {

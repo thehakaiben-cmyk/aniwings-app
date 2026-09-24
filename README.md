@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-universal.apk">
-    <img src="https://img.shields.io/badge/Download-Android%20Mobile-E25B73?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
+    <img src="https://img.shields.io/badge/Download-Android%20Mobile-FF2A54?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.2/aniwings-tv-v1.2.2-universal.apk">
