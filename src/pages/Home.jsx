@@ -65,9 +65,18 @@ export default function Home({ updateData }) {
     }
   };
 
-  const trackedDownloadUrl = (url, variant) => (
-    `/api/download?variant=${encodeURIComponent(variant)}&url=${encodeURIComponent(url)}`
-  );
+  const handleDownloadClick = (url, variant) => {
+    try {
+      fetch(`/api/download?variant=${encodeURIComponent(variant)}&url=${encodeURIComponent(url)}`, {
+        method: 'GET',
+        keepalive: true,
+      }).catch(() => {});
+    } catch {
+      // Analytics ping should not interrupt the file download
+    }
+  };
+
+  const directDownloadUrl = (url) => url;
 
   return (
     <div>
@@ -256,7 +265,8 @@ export default function Home({ updateData }) {
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
-                    href={trackedDownloadUrl(universalDownloadUrl, 'universal')} 
+                    href={directDownloadUrl(universalDownloadUrl)} 
+                    onClick={() => handleDownloadClick(universalDownloadUrl, 'universal')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-pre dlu-split-btn"
@@ -265,7 +275,8 @@ export default function Home({ updateData }) {
                     <span>Universal APK <span className="btn-tag">All Devices</span></span>
                   </a>
                   <a 
-                    href={trackedDownloadUrl(arm64DownloadUrl, 'arm64')} 
+                    href={directDownloadUrl(arm64DownloadUrl)} 
+                    onClick={() => handleDownloadClick(arm64DownloadUrl, 'arm64')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
@@ -274,7 +285,8 @@ export default function Home({ updateData }) {
                     <span>ARM64 v8a APK <span className="btn-tag">High-End</span></span>
                   </a>
                   <a 
-                    href={trackedDownloadUrl(armv7DownloadUrl, 'armv7')} 
+                    href={directDownloadUrl(armv7DownloadUrl)} 
+                    onClick={() => handleDownloadClick(armv7DownloadUrl, 'armv7')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
@@ -296,7 +308,8 @@ export default function Home({ updateData }) {
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
-                    href={trackedDownloadUrl(tvUniversalDownloadUrl, 'tv-universal')} 
+                    href={directDownloadUrl(tvUniversalDownloadUrl)} 
+                    onClick={() => handleDownloadClick(tvUniversalDownloadUrl, 'tv-universal')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-pre dlu-split-btn"
@@ -305,7 +318,8 @@ export default function Home({ updateData }) {
                     <span>Universal TV APK <span className="btn-tag">All TVs</span></span>
                   </a>
                   <a 
-                    href={trackedDownloadUrl(tvArm64DownloadUrl, 'tv-arm64')} 
+                    href={directDownloadUrl(tvArm64DownloadUrl)} 
+                    onClick={() => handleDownloadClick(tvArm64DownloadUrl, 'tv-arm64')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
@@ -314,7 +328,8 @@ export default function Home({ updateData }) {
                     <span>ARM64 v8a TV APK <span className="btn-tag">High-End</span></span>
                   </a>
                   <a 
-                    href={trackedDownloadUrl(tvArmv7DownloadUrl, 'tv-armv7')} 
+                    href={directDownloadUrl(tvArmv7DownloadUrl)} 
+                    onClick={() => handleDownloadClick(tvArmv7DownloadUrl, 'tv-armv7')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-secondary dlu-split-btn"
