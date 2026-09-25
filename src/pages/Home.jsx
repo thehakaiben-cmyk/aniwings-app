@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 let visitTracked = false;
 
@@ -338,31 +337,6 @@ export default function Home({ updateData }) {
                     <i className="ri-tv-2-line"></i>
                     <span>armeabi-v7a TV APK <span className="btn-tag">Low-End</span></span>
                   </a>
-                </div>
-                <div style={{ marginTop: '16px', textAlign: 'center' }}>
-                  <Link
-                    to="/tv"
-                    className="dlu-tv-link-btn"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      background: 'rgba(122, 201, 255, 0.08)',
-                      border: '1px solid rgba(122, 201, 255, 0.25)',
-                      color: 'var(--accent-secondary)',
-                      padding: '10px 18px',
-                      borderRadius: '12px',
-                      fontSize: '13.5px',
-                      fontWeight: 600,
-                      textDecoration: 'none',
-                      transition: 'all 0.25s ease',
-                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                    }}
-                  >
-                    <i className="ri-qr-code-line" style={{ fontSize: '16px' }}></i>
-                    <span>Already on TV? Link with Google</span>
-                    <i className="ri-arrow-right-line" style={{ fontSize: '14px', opacity: 0.8 }}></i>
-                  </Link>
                 </div>
               </div>
             </div>

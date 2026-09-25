@@ -1,14 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('heading-content');
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const isTvRoute = location.pathname === '/tv' || location.pathname === '/login' || location.pathname === '/auth';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,8 +15,6 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (isTvRoute) return;
-
     const sections = ['heading-content', 'section-about', 'section-features', 'section-download'];
     const observers = sections.map((id) => {
       const el = document.getElementById(id);
@@ -35,7 +29,7 @@ export default function Navbar() {
       return observer;
     });
     return () => observers.forEach((obs) => obs && obs.disconnect());
-  }, [isTvRoute]);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -47,43 +41,20 @@ export default function Navbar() {
     { label: 'About', href: '#section-about', id: 'section-about', icon: 'ri-information-line', activeIcon: 'ri-information-fill' },
     { label: 'Features', href: '#section-features', id: 'section-features', icon: 'ri-sparkling-2-line', activeIcon: 'ri-sparkling-2-fill' },
     { label: 'Download', href: '#section-download', id: 'section-download', icon: 'ri-download-2-line', activeIcon: 'ri-download-2-fill' },
-    { label: 'TV Login', href: '/tv', isRoute: true, id: 'tv-login', icon: 'ri-tv-line', activeIcon: 'ri-tv-fill' },
   ];
 
-  const handleNavClick = (e, link) => {
-    setMenuOpen(false);
-
-    if (link.isRoute) {
-      // standard Link navigation
-      return;
-    }
-
+  const handleNavClick = (e, href) => {
     e.preventDefault();
-    if (location.pathname !== '/') {
-      navigate('/' + link.href);
-      setTimeout(() => {
-        const el = document.querySelector(link.href);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      const el = document.querySelector(link.href);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
+    setMenuOpen(false);
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleFollowClick = (e) => {
     e.preventDefault();
     setMenuOpen(false);
-    if (location.pathname !== '/') {
-      navigate('/#footer');
-      setTimeout(() => {
-        const footer = document.getElementById('footer');
-        if (footer) footer.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      const footer = document.getElementById('footer');
-      if (footer) footer.scrollIntoView({ behavior: 'smooth' });
-    }
+    const footer = document.getElementById('footer');
+    if (footer) footer.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -101,47 +72,21 @@ export default function Navbar() {
 
           {/* Column 2 — Desktop Nav Links */}
           <ul className="navbar__links">
-            {navLinks.map((link) => {
-              const isActive = link.isRoute ? isTvRoute : (!isTvRoute && activeSection === link.id);
-              if (link.isRoute) {
-                return (
-                  <li key={link.href}>
-                    <Link
-                      to={link.href}
-                      className={`navbar__link tv-nav-btn${isActive ? ' active' : ''}`}
-                    >
-                      <i className="ri-tv-line" style={{ marginRight: '6px' }}></i>
-                      {link.label}
-                    </Link>
-                  </li>
-                );
-              }
-              return (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className={`navbar__link${isActive ? ' active' : ''}`}
-                    onClick={(e) => handleNavClick(e, link)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              );
-            })}
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`navbar__link${activeSection === link.id ? ' active' : ''}`}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
           {/* Column 3 — Right side: Follow CTA + Hamburger */}
           <div className="navbar__right">
-            <Link
-              to="/tv"
-              className="navbar__tv-cta"
-              id="navbar-tv-btn"
-              title="Pair & Link your Android TV"
-            >
-              <i className="ri-tv-2-line"></i>
-              <span>Link TV</span>
-            </Link>
-
             <a
               href="#footer"
               className="navbar__cta"
@@ -149,7 +94,7 @@ export default function Navbar() {
               id="navbar-follow-btn"
             >
               <i className="ri-heart-line"></i>
-              <span>Follow</span>
+              Follow
             </a>
 
             <button
@@ -181,29 +126,13 @@ export default function Navbar() {
 
           <div className="navbar__mobile-links">
             {navLinks.map((link) => {
-              const isActive = link.isRoute ? isTvRoute : (!isTvRoute && activeSection === link.id);
-              if (link.isRoute) {
-                return (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    className={`navbar__mobile-link${isActive ? ' active' : ''}`}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <div className="navbar__mobile-link-icon">
-                      <i className={isActive ? link.activeIcon : link.icon}></i>
-                    </div>
-                    <span className="navbar__mobile-link-label">{link.label}</span>
-                    {isActive && <span className="navbar__mobile-active-dot" />}
-                  </Link>
-                );
-              }
+              const isActive = activeSection === link.id;
               return (
                 <a
                   key={link.href}
                   href={link.href}
                   className={`navbar__mobile-link${isActive ? ' active' : ''}`}
-                  onClick={(e) => handleNavClick(e, link)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                 >
                   <div className="navbar__mobile-link-icon">
                     <i className={isActive ? link.activeIcon : link.icon}></i>
@@ -216,14 +145,6 @@ export default function Navbar() {
           </div>
 
           <div className="navbar__mobile-footer">
-            <Link
-              to="/tv"
-              className="navbar__mobile-tv-cta"
-              onClick={() => setMenuOpen(false)}
-            >
-              <i className="ri-tv-line"></i>
-              <span>Link Android TV</span>
-            </Link>
             <a
               href="#footer"
               className="navbar__mobile-cta"
