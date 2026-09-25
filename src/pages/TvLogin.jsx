@@ -84,6 +84,12 @@ export default function TvLogin() {
   useEffect(() => {
     if (queryCode) {
       setCode(queryCode.toUpperCase().trim());
+      // Automatically attempt to open the AniWings mobile app with the TV pairing code
+      const cleanCode = queryCode.toUpperCase().trim();
+      const formattedCode = cleanCode.startsWith('WNG-') ? cleanCode : (cleanCode.startsWith('WNG') ? `WNG-${cleanCode.slice(3)}` : `WNG-${cleanCode}`);
+      try {
+        window.location.href = `aniwings://tv-login?code=${encodeURIComponent(formattedCode)}`;
+      } catch (_) {}
     }
     if (queryMode) {
       setMode(queryMode === 'signup' ? 'signup' : 'signin');
@@ -311,6 +317,95 @@ export default function TvLogin() {
                   ? 'Sign up with Google on your mobile/browser to activate and personalize your TV app.'
                   : 'Quick TV login: Connect your Google account to sync watchlist, history, and preferences to your TV.'}
               </p>
+            </div>
+
+            {/* Mobile App First Announcement Banner */}
+            <div
+              className="tv-mobile-redirect-banner"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255, 42, 84, 0.14), rgba(56, 189, 248, 0.12))',
+                border: '1px solid rgba(56, 189, 248, 0.28)',
+                borderRadius: '16px',
+                padding: '16px 18px',
+                marginBottom: '20px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div
+                  style={{
+                    width: '38px',
+                    height: '38px',
+                    borderRadius: '10px',
+                    background: 'rgba(56, 189, 248, 0.2)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#38BDF8',
+                    fontSize: '22px',
+                    flexShrink: 0,
+                  }}
+                >
+                  <i className="ri-smartphone-line"></i>
+                </div>
+                <div>
+                  <div style={{ fontSize: '14.5px', fontWeight: '700', color: '#FFFFFF' }}>
+                    Login inside the AniWings Mobile App!
+                  </div>
+                  <div style={{ fontSize: '12px', color: '#94A3B8', marginTop: '2px', lineHeight: '1.4' }}>
+                    Open AniWings on your phone → <strong>Profile → Login to TV (Scan QR)</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href={`aniwings://tv-login?code=${encodeURIComponent(code || queryCode)}`}
+                  className="btn btn-pre"
+                  style={{
+                    flex: '1',
+                    minWidth: '160px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '6px',
+                    padding: '10px 16px',
+                    fontSize: '13px',
+                    fontWeight: '700',
+                    textDecoration: 'none',
+                    borderRadius: '10px',
+                  }}
+                >
+                  <i className="ri-external-link-line"></i>
+                  <span>Open in AniWings App</span>
+                </a>
+
+                <a
+                  href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-universal.apk"
+                  className="btn btn-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '6px',
+                    padding: '10px 16px',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    textDecoration: 'none',
+                    background: 'rgba(255, 255, 255, 0.06)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                    color: '#CBD5E1',
+                    borderRadius: '10px',
+                  }}
+                >
+                  <i className="ri-download-2-line"></i>
+                  <span>Get App APK</span>
+                </a>
+              </div>
             </div>
 
             {/* Mode Switcher Tabs */}
