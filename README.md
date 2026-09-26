@@ -82,7 +82,7 @@
 
 #### Option 1: Via Downloader App (Recommended)
 1. Install **Downloader by AFTVnews** from the Google Play Store on your Android TV.
-2. Open Downloader and enter `https://ani-wings.web.app` or one of the direct TV APK links above.
+2. Open Downloader and enter `https://aniwings-app.pages.dev` or one of the direct TV APK links above.
 3. Download the TV-optimized APK and follow the installation prompt.
 
 #### Option 2: Via USB Flash Drive
@@ -113,7 +113,7 @@
 - 📢 **Telegram**: [Join AniWings Telegram Channel](https://t.me/aniwings_community)
 - 🔴 **Reddit**: [r/AniWings_Official Subreddit](https://www.reddit.com/r/AniWings_Official/)
 - 🌐 **App download Portal**: [aniwings-app.pages.dev](https://aniwings-app.pages.dev/)
-- 🎬 **Web Streaming**: [ani-wings.web.app](https://ani-wings.web.app/)
+- 🎬 **Web Streaming Portal**: [ani-wings.web.app](https://ani-wings.web.app/)
 
 ---
 
