@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-universal.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20Mobile-FF2A54?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.2/aniwings-tv-v1.2.2-universal.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20TV-3DDC84?style=for-the-badge&logo=androidtv&logoColor=white" height="45" alt="Download Android TV">
   </a>
   &nbsp;&nbsp;
@@ -42,23 +42,23 @@
 
 ## 📥 Direct Download & Installation
 
-### 📱 Android Mobiles & Tablets (v1.2.0)
+### 📱 Android Mobiles & Tablets (v1.2.1)
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
-| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-universal.apk) | 🟢 Live |
-| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-arm64-v8a.apk) | 🟢 Live |
-| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.0/AniWings-armeabi-v7a.apk) | 🟢 Live |
+| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-universal.apk) | 🟢 Live |
+| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-armeabi-v7a.apk) | 🟢 Live |
 
 ---
 
-### 📺 Android TV & Smart TV Boxes (v1.2.2)
+### 📺 Android TV & Smart TV Boxes (v1.2.3)
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
-| **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.2/aniwings-tv-v1.2.2-universal.apk) | 🟢 Live |
-| **ARM64-v8a TV APK** | High-End Smart TVs | [⚡ **Download TV ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.2/aniwings-tv-v1.2.2-arm64-v8a.apk) | 🟢 Live |
-| **armeabi-v7a TV APK** | Low-End / Legacy TV Boxes | [🕹️ **Download TV ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.2/aniwings-tv-v1.2.2-armeabi-v7a.apk) | 🟢 Live |
+| **Universal TV APK** | All Smart TVs & TV Boxes | [📺 **Download TV Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-universal.apk) | 🟢 Live |
+| **ARM64-v8a TV APK** | High-End Smart TVs | [⚡ **Download TV ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a TV APK** | Low-End / Legacy TV Boxes | [🕹️ **Download TV ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-armeabi-v7a.apk) | 🟢 Live |
 
 ---
 
@@ -86,7 +86,7 @@
 3. Download the TV-optimized APK and follow the installation prompt.
 
 #### Option 2: Via USB Flash Drive
-1. Download `aniwings-tv-v1.2.2-universal.apk` on a PC or phone.
+1. Download `aniwings-tv-v1.2.3-universal.apk` on a PC or phone.
 2. Transfer the file to a USB flash drive and insert it into your Android TV box.
 3. Use a file manager app on your TV (such as *AnExplorer* or *File Commander*) to open the USB drive and install.
 
@@ -95,10 +95,14 @@
 ## ✨ Features Highlight
 
 - 🛡️ **Zero Advertisements**: Pure streaming experience without pop-up redirects or video ads.
+- 🎨 **Completely Reworked UI**: Modernized interface, design refinements, and profile customization.
 - ⬇️ **Anime Downloads**: Download your favorite anime episodes directly for offline viewing.
+- 📺 **In-App TV QR Login**: Seamlessly link and sign in to AniWings TV directly from your mobile app using QR code pairing.
+- 🖥️ **Fire TV & Shield TV HDR Support**: Expanded support for Amazon Fire TV & NVIDIA Shield TV with HDR and display color correction.
+- 🔌 **Open Extension Support**: Modular provider extensions unlocked and accessible for all users.
+- 📊 **Tracker Provider Customization**: Sync watch progress with Kitsu, AniDB, MyAnimeList (MAL), and AniList under user control.
 - 🌐 **Custom DNS Access**: Integrated DNS configuration for improved connectivity and privacy.
-- 🇮🇳 **Indian Language Multi-Audio**: Multi-audio server support featuring Indian languages.
-- 🔌 **Extension Support (Beta)**: Expandable modular provider extensions.
+- 🇮🇳 **Indian Language Multi-Audio**: Streaming server options featuring Indian languages along with 2 new streaming servers.
 - 🗣️ **Dual Audio Options**: Easily toggle between Subtitled (**SUB**) and Dubbed (**DUB**) audio tracks.
 - ⚡ **Buffering-Free Player**: High-speed content delivery network (CDN) for fast HD playback.
 - 📅 **Daily Simulcast Sync**: New episodes updated daily alongside Japanese TV broadcasts.
