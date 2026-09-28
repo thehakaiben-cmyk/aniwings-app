@@ -3,14 +3,14 @@ import { useEffect } from 'react';
 let visitTracked = false;
 
 export default function Home({ updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-universal.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-universal.apk';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
   const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
-  const fileSize = updateData?.fileSize || '159.1 MB';
+  const fileSize = updateData?.fileSize || '168.1 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
@@ -375,7 +375,7 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.2.1'} Release Notes
+                    Mobile v{updateData?.version || '1.2.2'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}

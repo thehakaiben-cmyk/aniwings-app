@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-universal.apk">
+  <a href="https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-universal.apk">
     <img src="https://img.shields.io/badge/Download-Android%20Mobile-FF2A54?style=for-the-badge&logo=android&logoColor=white" height="45" alt="Download Android APK">
   </a>
   &nbsp;&nbsp;
@@ -42,13 +42,13 @@
 
 ## 📥 Direct Download & Installation
 
-### 📱 Android Mobiles & Tablets (v1.2.1)
+### 📱 Android Mobiles & Tablets (v1.2.2)
 
 | Build Variant | Architecture | Download Link | Status |
 | :--- | :--- | :--- | :--- |
-| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-universal.apk) | 🟢 Live |
-| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-arm64-v8a.apk) | 🟢 Live |
-| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.1/AniWings-armeabi-v7a.apk) | 🟢 Live |
+| **Universal APK** | All Devices (Recommended) | [📥 **Download Universal APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-universal.apk) | 🟢 Live |
+| **ARM64-v8a APK** | High-End Mobile Devices | [⚡ **Download ARM64 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-arm64-v8a.apk) | 🟢 Live |
+| **armeabi-v7a APK** | Low-End / Legacy Devices | [📱 **Download ARMv7 APK**](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-armeabi-v7a.apk) | 🟢 Live |
 
 ---
 
