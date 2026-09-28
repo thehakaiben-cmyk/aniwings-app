@@ -11,7 +11,7 @@ const DEFAULT_UPDATE_DATA = {
   arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-arm64-v8a.apk',
   armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-armeabi-v7a.apk',
   mandatory: true,
-  releaseNotes: 'AniWings v1.2.2 Update - Completely reworked user interface with modern design updates, resolved streaming server and buffer issues with 2 brand new servers added, opened modular extension support for everyone, introduced profile customization, integrated in-app TV QR code login linking, added tracker provider customization (Kitsu, AniDB, MyAnimeList, and AniList) handed over directly to users, added Help & Guidance page and direct Email Support, introduced an optional Support page to maintain the app (optional ad viewing - not mandatory), and implemented optimal bug fixes and performance improvements.',
+  releaseNotes: 'AniWings v1.2.2 Update - Fixed extension issues and resolved various bugs.',
   minVersion: '1.2.2',
   fileSize: '168.1 MB',
   updatedAt: '2026-09-28',
