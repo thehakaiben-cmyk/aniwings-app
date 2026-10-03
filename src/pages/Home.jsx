@@ -3,14 +3,14 @@ import { useEffect } from 'react';
 let visitTracked = false;
 
 export default function Home({ updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.2/AniWings-universal.apk';
-  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.3/aniwings-tv-v1.2.3-universal.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-universal.apk';
+  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
   const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
-  const fileSize = updateData?.fileSize || '168.1 MB';
+  const fileSize = updateData?.fileSize || '172.9 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
@@ -19,7 +19,7 @@ export default function Home({ updateData }) {
   const tvUniversalDownloadUrl = tvData?.universalUrl || updateData?.tvUniversalUrl || tvDownloadUrl;
   const tvArm64DownloadUrl = tvData?.arm64Url || updateData?.tvArm64Url || tvDownloadUrl;
   const tvArmv7DownloadUrl = tvData?.armv7Url || updateData?.tvArmv7Url || tvDownloadUrl;
-  const tvFileSize = tvData?.fileSize || '67.1 MB';
+  const tvFileSize = tvData?.fileSize || '69.1 MB';
 
   useEffect(() => {
     if (!visitTracked) {
@@ -222,6 +222,46 @@ export default function Home({ updateData }) {
                 <p>Track and curate your collection. Organize completed titles, keep tabs on your current episode count, and build watchlists for upcoming releases.</p>
               </div>
             </div>
+
+            <div className="fl-item">
+              <div className="fl-icon">
+                <i className="ri-puzzle-line"></i>
+              </div>
+              <div className="fl-title">Extension Support</div>
+              <div className="fl-content">
+                <p>Unlock endless anime catalogues with modular extension support like Yozuno and Aniyomi extensions. Easily add custom repositories, scrapers, and external sources.</p>
+              </div>
+            </div>
+
+            <div className="fl-item">
+              <div className="fl-icon">
+                <i className="ri-sparkling-fill"></i>
+              </div>
+              <div className="fl-title">AI Translator</div>
+              <div className="fl-content">
+                <p>Enjoy anime in any language with our intelligent real-time AI subtitle translator, delivering instant and accurate dialogue translations on the fly.</p>
+              </div>
+            </div>
+
+            <div className="fl-item">
+              <div className="fl-icon">
+                <i className="ri-hd-line"></i>
+              </div>
+              <div className="fl-title">Video Upscaler Feature</div>
+              <div className="fl-content">
+                <p>Elevate your visual experience with real-time video upscaling. Enhance video resolution, sharpen textures, and boost color vibrancy for stunning high-definition playback.</p>
+              </div>
+            </div>
+
+            <div className="fl-item">
+              <div className="fl-icon">
+                <i className="ri-server-line"></i>
+              </div>
+              <div className="fl-title">Torrent Server</div>
+              <div className="fl-content">
+                <p>Stream high-quality anime releases directly through the built-in torrent server engine. Experience instant peer-to-peer playback without waiting for full downloads.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -375,7 +415,7 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.2.2'} Release Notes
+                    Mobile v{updateData?.version || '1.2.3'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}
@@ -400,10 +440,10 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
-                    Android TV v{tvData?.version || '1.2.3'} Release Notes
+                    Android TV v{tvData?.version || '1.2.4'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    Released: {tvData?.updatedAt || '2026-09-26'}
+                    Released: {tvData?.updatedAt || '2026-10-03'}
                   </span>
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
