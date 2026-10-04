@@ -10,7 +10,7 @@
 
 <br>
 
-[![Android](https://img.shields.io/badge/Android-v1.2.3-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-universal.apk)
+[![Android](https://img.shields.io/badge/Android-v1.2.4-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk)
 [![Android TV](https://img.shields.io/badge/Android_TV-v1.2.4-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
@@ -65,15 +65,15 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 
 # 📥 Downloads
 
-## 📱 Android Mobile — v1.2.3
+## 📱 Android Mobile — v1.2.4
 
 Choose the build that best matches your Android device.
 
 | Build | Recommended For | Download |
 | --- | --- | :---: |
-| **Universal** | Most Android devices | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-universal.apk) |
-| **ARM64-v8a** | Modern 64-bit devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-arm64-v8a.apk) |
-| **armeabi-v7a** | Older 32-bit devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-armeabi-v7a.apk) |
+| **Universal** | Most Android devices | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk) |
+| **ARM64-v8a** | Modern 64-bit devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-arm64-v8a.apk) |
+| **armeabi-v7a** | Older 32-bit devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-armeabi-v7a.apk) |
 
 > 💡 **Not sure which one to download?** Choose the **Universal APK**.
 

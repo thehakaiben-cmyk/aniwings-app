@@ -5,16 +5,16 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 const DEFAULT_UPDATE_DATA = {
-  version: '1.2.3',
-  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-universal.apk',
-  universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-universal.apk',
-  arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-arm64-v8a.apk',
-  armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.3/AniWings-armeabi-v7a.apk',
+  version: '1.2.4',
+  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk',
+  universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk',
+  arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-arm64-v8a.apk',
+  armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-armeabi-v7a.apk',
   mandatory: true,
-  releaseNotes: 'AniWings v1.2.3 Update - Integrated AI translator, added video upscaler, added 2 new torrent-based streaming servers, and resolved bugs.',
-  minVersion: '1.2.3',
-  fileSize: '172.9 MB',
-  updatedAt: '2026-10-03',
+  releaseNotes: 'AniWings v1.2.4 Update - Bug fixes, provider switch up properly and some design changes.',
+  minVersion: '1.2.4',
+  fileSize: '173.0 MB',
+  updatedAt: '2026-10-04',
   appName: 'AniWings',
   tv: {
     version: '1.2.4',
