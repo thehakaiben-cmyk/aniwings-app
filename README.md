@@ -12,12 +12,13 @@
 
 [![Android](https://img.shields.io/badge/Android-v1.2.4-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk)
 [![Android TV](https://img.shields.io/badge/Android_TV-v1.2.4-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk)
+[![Desktop](https://img.shields.io/badge/Desktop-v1.2.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
 <br>
 
 [![GitHub Release](https://img.shields.io/github/v/release/thehakaiben-cmyk/aniwings-app?style=flat-square&label=Latest%20Release)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
-![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV%20%7C%20Desktop-blue?style=flat-square)
 ![Extensions](https://img.shields.io/badge/Extensions-Mobile-purple?style=flat-square)
 ![Ads](https://img.shields.io/badge/Ads-Optional-success?style=flat-square)
 ![iOS](https://img.shields.io/badge/iOS-Coming%20Soon-yellow?style=flat-square)
@@ -90,6 +91,19 @@ Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and com
 | **armeabi-v7a TV** | Older TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-armeabi-v7a.apk) |
 
 > 📺 For most televisions and TV boxes, choose the **Universal TV APK**.
+
+---
+
+## 💻 Desktop (Windows & Linux) — v1.2.5
+
+Native desktop builds for **Windows 10/11** and **Linux distributions**.
+
+| Build | Recommended For | Download |
+| --- | --- | :---: |
+| **Windows (.exe)** | Windows 10 & 11 (64-bit) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
+| **Linux (.AppImage)** | Universal Linux (x86_64) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
+
+> 💻 Choose the **Windows (.exe)** setup for Windows PCs, or the standalone **Linux (.AppImage)** for Linux distributions.
 
 ---
 

@@ -5,6 +5,8 @@ let visitTracked = false;
 export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk';
+  const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
+  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
@@ -20,6 +22,15 @@ export default function Home({ updateData }) {
   const tvArm64DownloadUrl = tvData?.arm64Url || updateData?.tvArm64Url || tvDownloadUrl;
   const tvArmv7DownloadUrl = tvData?.armv7Url || updateData?.tvArmv7Url || tvDownloadUrl;
   const tvFileSize = tvData?.fileSize || '69.1 MB';
+
+  const desktopData = updateData?.desktop;
+  const desktopDownloadUrl = desktopData?.url || DEFAULT_DESKTOP_WINDOWS_URL;
+  const desktopWindowsDownloadUrl = desktopData?.windowsUrl || desktopDownloadUrl;
+  const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
+  const desktopFileSize = desktopData?.fileSize || '85.0 MB';
+  const desktopVersion = desktopData?.version || '1.2.5';
+  const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-05';
+  const desktopReleaseNotes = desktopData?.releaseNotes;
 
   useEffect(() => {
     if (!visitTracked) {
@@ -381,6 +392,39 @@ export default function Home({ updateData }) {
               </div>
             </div>
 
+            {/* Desktop */}
+            <div className="dlu-item">
+              <div className="dlu-icon">
+                <i className="ri-computer-line"></i>
+              </div>
+              <h3 className="dlu-title">Desktop</h3>
+              <p className="dlu-desc">{desktopFileSize} • Select build for Windows &amp; Linux PC.</p>
+              <div className="dlu-detail">
+                <div className="dlu-btn-group">
+                  <a 
+                    href={directDownloadUrl(desktopWindowsDownloadUrl)} 
+                    onClick={() => handleDownloadClick(desktopWindowsDownloadUrl, 'desktop-windows')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-pre dlu-split-btn"
+                  >
+                    <i className="ri-windows-fill"></i>
+                    <span>Windows (.exe) <span className="btn-tag">Win 10/11</span></span>
+                  </a>
+                  <a 
+                    href={directDownloadUrl(desktopLinuxDownloadUrl)} 
+                    onClick={() => handleDownloadClick(desktopLinuxDownloadUrl, 'desktop-linux')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-linux-fill"></i>
+                    <span>Linux (.AppImage) <span className="btn-tag">Universal</span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* iOS */}
             <div className="dlu-item coming-soon">
               <span className="coming-soon-badge">Coming Soon</span>
@@ -448,6 +492,31 @@ export default function Home({ updateData }) {
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
                   {tvData.releaseNotes}
+                </p>
+              </div>
+            )}
+
+            {/* Desktop Release Notes */}
+            {desktopReleaseNotes && (
+              <div className="release-notes-card" style={{
+                padding: '1.5rem 2rem',
+                borderRadius: '16px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+                textAlign: 'left',
+                backdropFilter: 'blur(10px)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
+                    <i className="ri-computer-line" style={{ color: '#00A8E1' }}></i>
+                    Desktop v{desktopVersion} Release Notes
+                  </h4>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    Released: {desktopUpdatedAt}
+                  </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                  {desktopReleaseNotes}
                 </p>
               </div>
             )}

@@ -11,6 +11,8 @@ const FALLBACK_DOWNLOAD_URLS = {
   'tv-universal': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk',
   'tv-arm64': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-arm64-v8a.apk',
   'tv-armv7': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-armeabi-v7a.apk',
+  'desktop-windows': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe',
+  'desktop-linux': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage',
 };
 
 function cleanVariant(value) {
@@ -21,10 +23,18 @@ function cleanVariant(value) {
 function isAllowedDownloadUrl(value) {
   try {
     const url = new URL(value);
+    const pathname = url.pathname.toLowerCase();
+    const hasAllowedExtension =
+      pathname.endsWith('.apk') ||
+      pathname.endsWith('.exe') ||
+      pathname.endsWith('.appimage') ||
+      pathname.endsWith('.deb') ||
+      pathname.endsWith('.zip');
+
     return url.protocol === 'https:' &&
       url.hostname === 'github.com' &&
       url.pathname.startsWith('/thehakaiben-cmyk/aniwings-app/releases/download/') &&
-      url.pathname.toLowerCase().endsWith('.apk');
+      hasAllowedExtension;
   } catch {
     return false;
   }

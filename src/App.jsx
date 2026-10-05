@@ -28,6 +28,20 @@ const DEFAULT_UPDATE_DATA = {
     fileSize: '69.1 MB',
     updatedAt: '2026-10-03',
     appName: 'AniWings TV'
+  },
+  desktop: {
+    version: '1.2.5',
+    url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe',
+    windowsUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe',
+    linuxUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage',
+    windowsFileName: 'aniwings-desktop-windows-v1.2.5.exe',
+    linuxFileName: 'aniwings-desktop-linux-v1.2.5.AppImage',
+    mandatory: true,
+    releaseNotes: 'AniWings Desktop v1.2.5 Update - New version of AniWings on Desktop.',
+    minVersion: '1.2.5',
+    fileSize: '85.0 MB',
+    updatedAt: '2026-10-05',
+    appName: 'AniWings Desktop'
   }
 };
 

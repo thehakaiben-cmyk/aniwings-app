@@ -734,9 +734,9 @@ strong {
 
 .dl-ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -744,13 +744,14 @@ strong {
     background: var(--card-surface);
     border: 1px solid var(--border-subtle);
     border-radius: 18px;
-    padding: 40px 32px;
+    padding: 36px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: border-color 0.2s ease;
     position: relative;
+    height: 100%;
 }
 
 .dlu-item:not(.coming-soon):hover {
@@ -758,17 +759,18 @@ strong {
 }
 
 .dlu-icon {
-    font-size: 40px;
+    font-size: 38px;
     color: var(--accent-primary);
-    margin-bottom: 20px;
-    width: 80px;
-    height: 80px;
+    margin-bottom: 18px;
+    width: 76px;
+    height: 76px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: rgba(255, 42, 84, 0.05);
     border: 1px solid rgba(255, 42, 84, 0.1);
+    flex-shrink: 0;
 }
 
 .dlu-title {
@@ -779,9 +781,9 @@ strong {
 }
 
 .dlu-desc {
-    font-size: 14px;
+    font-size: 13.5px;
     color: var(--text-muted);
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     line-height: 1.5;
 }
 
@@ -810,8 +812,8 @@ strong {
     width: 100%;
     justify-content: center;
     gap: 8px;
-    font-size: 14.5px;
-    padding: 11px 18px;
+    font-size: 14px;
+    padding: 11px 14px;
 }
 
 .btn-tag {
@@ -880,6 +882,20 @@ strong {
 /* ═══════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════ */
+
+@media (min-width: 1200px) {
+    #section-download .container {
+        max-width: 1260px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .dl-ul {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 760px;
+        gap: 24px;
+    }
+}
 
 @media (max-width: 991px) {
     .app-mockup-wrapper {
