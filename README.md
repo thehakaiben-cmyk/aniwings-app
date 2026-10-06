@@ -94,16 +94,15 @@ Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and com
 
 ---
 
-## 💻 Desktop (Windows & Linux) — v1.2.5
+## 💻 Desktop (Windows) — v1.2.5
 
-Native desktop builds for **Windows 10/11** and **Linux distributions**.
+Native desktop build for **Windows 10 & 11**.
 
 | Build | Recommended For | Download |
 | --- | --- | :---: |
 | **Windows (.exe)** | Windows 10 & 11 (64-bit) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
-| **Linux (.AppImage)** | Universal Linux (x86_64) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
 
-> 💻 Choose the **Windows (.exe)** setup for Windows PCs, or the standalone **Linux (.AppImage)** for Linux distributions.
+> 💻 Choose the **Windows (.exe)** setup for Windows 10 & 11 PCs.
 
 ---
 

@@ -12,7 +12,6 @@ const FALLBACK_DOWNLOAD_URLS = {
   'tv-arm64': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk',
   'tv-armv7': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk',
   'desktop-windows': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe',
-  'desktop-linux': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage',
 };
 
 function cleanVariant(value) {
