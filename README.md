@@ -10,8 +10,8 @@
 
 <br>
 
-[![Android](https://img.shields.io/badge/Android-v1.2.4-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk)
-[![Android TV](https://img.shields.io/badge/Android_TV-v1.2.4-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk)
+[![Android](https://img.shields.io/badge/Android-v1.2.5-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk)
+[![Android TV](https://img.shields.io/badge/Android_TV-v1.2.5-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk)
 [![Desktop](https://img.shields.io/badge/Desktop-v1.2.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
@@ -66,29 +66,29 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 
 # 📥 Downloads
 
-## 📱 Android Mobile — v1.2.4
+## 📱 Android Mobile — v1.2.5
 
 Choose the build that best matches your Android device.
 
 | Build | Recommended For | Download |
 | --- | --- | :---: |
-| **Universal** | Most Android devices | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk) |
-| **ARM64-v8a** | Modern 64-bit devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-arm64-v8a.apk) |
-| **armeabi-v7a** | Older 32-bit devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-armeabi-v7a.apk) |
+| **Universal** | Most Android devices | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk) |
+| **ARM64-v8a** | Modern 64-bit devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk) |
+| **armeabi-v7a** | Older 32-bit devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk) |
 
 > 💡 **Not sure which one to download?** Choose the **Universal APK**.
 
 ---
 
-## 📺 Android TV — v1.2.4
+## 📺 Android TV — v1.2.5
 
 Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and compatible Android TV boxes**.
 
 | Build | Recommended For | Download |
 | --- | --- | :---: |
-| **Universal TV** | Most TVs & TV boxes | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk) |
-| **ARM64-v8a TV** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-arm64-v8a.apk) |
-| **armeabi-v7a TV** | Older TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-armeabi-v7a.apk) |
+| **Universal TV** | Most TVs & TV boxes | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk) |
+| **ARM64-v8a TV** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk) |
+| **armeabi-v7a TV** | Older TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk) |
 
 > 📺 For most televisions and TV boxes, choose the **Universal TV APK**.
 
@@ -338,7 +338,7 @@ https://aniwings-app.pages.dev
 1. Download:
 
 ```text
-aniwings-tv-v1.2.4-universal.apk
+aniwings-tv-v1.2.5-universal.apk
 ```
 
 2. Copy the APK to a USB flash drive.

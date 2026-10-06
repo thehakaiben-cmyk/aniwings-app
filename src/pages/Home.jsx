@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 let visitTracked = false;
 
 export default function Home({ updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk';
-  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk';
+  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
   const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
   const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
@@ -12,7 +12,7 @@ export default function Home({ updateData }) {
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
   const arm64DownloadUrl = updateData?.arm64Url || downloadUrl;
   const armv7DownloadUrl = updateData?.armv7Url || updateData?.armV7Url || downloadUrl;
-  const fileSize = updateData?.fileSize || '173.0 MB';
+  const fileSize = updateData?.fileSize || '176.1 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
@@ -21,15 +21,15 @@ export default function Home({ updateData }) {
   const tvUniversalDownloadUrl = tvData?.universalUrl || updateData?.tvUniversalUrl || tvDownloadUrl;
   const tvArm64DownloadUrl = tvData?.arm64Url || updateData?.tvArm64Url || tvDownloadUrl;
   const tvArmv7DownloadUrl = tvData?.armv7Url || updateData?.tvArmv7Url || tvDownloadUrl;
-  const tvFileSize = tvData?.fileSize || '69.1 MB';
+  const tvFileSize = tvData?.fileSize || '69.8 MB';
 
   const desktopData = updateData?.desktop;
   const desktopDownloadUrl = desktopData?.url || DEFAULT_DESKTOP_WINDOWS_URL;
   const desktopWindowsDownloadUrl = desktopData?.windowsUrl || desktopDownloadUrl;
   const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
-  const desktopFileSize = desktopData?.fileSize || '85.0 MB';
+  const desktopFileSize = desktopData?.fileSize || '15.3 MB';
   const desktopVersion = desktopData?.version || '1.2.5';
-  const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-05';
+  const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-07';
   const desktopReleaseNotes = desktopData?.releaseNotes;
 
   useEffect(() => {
@@ -459,7 +459,7 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.2.4'} Release Notes
+                    Mobile v{updateData?.version || '1.2.5'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}
@@ -484,10 +484,10 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
-                    Android TV v{tvData?.version || '1.2.4'} Release Notes
+                    Android TV v{tvData?.version || '1.2.5'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    Released: {tvData?.updatedAt || '2026-10-03'}
+                    Released: {tvData?.updatedAt || '2026-10-07'}
                   </span>
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>

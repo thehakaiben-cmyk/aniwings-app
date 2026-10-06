@@ -5,12 +5,12 @@ import { getCountryCode } from './_lib/geo.js';
 import { methodNotAllowed } from './_lib/http.js';
 
 const FALLBACK_DOWNLOAD_URLS = {
-  universal: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-universal.apk',
-  arm64: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-arm64-v8a.apk',
-  armv7: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.4/AniWings-armeabi-v7a.apk',
-  'tv-universal': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-universal.apk',
-  'tv-arm64': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-arm64-v8a.apk',
-  'tv-armv7': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.4/aniwings-tv-v1.2.4-armeabi-v7a.apk',
+  universal: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk',
+  arm64: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk',
+  armv7: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk',
+  'tv-universal': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk',
+  'tv-arm64': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk',
+  'tv-armv7': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk',
   'desktop-windows': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe',
   'desktop-linux': 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage',
 };
