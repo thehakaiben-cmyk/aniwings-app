@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "961563973576",
+    "project_id": "aniwings-9beea",
+    "storage_bucket": "aniwings-9beea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961563973576:android:e4ed11fab16242c91c92fd",
+        "android_client_info": {
+          "package_name": "com.aniwings.desktop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961563973576-r5fug45fkicj1evmdjlc452v6m7ntlpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniwings.desktop",
+            "certificate_hash": "f7fbbd41ad79447f5d7663d243a68ffca01f0f0e"
+          }
+        },
+        {
+          "client_id": "961563973576-f3ttkjb58pmlbpc3b3puf63vlpnlg55c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxmjBv9LUoy51kotDNXzJNz-N-JggBkA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961563973576-f3ttkjb58pmlbpc3b3puf63vlpnlg55c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "961563973576-o4kfqrq2n2r0icviumi9gcm8uplpnvgu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aniwings.desktop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

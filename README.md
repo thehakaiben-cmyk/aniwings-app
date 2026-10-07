@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/images/logo.png" width="150" alt="AniWings Logo">
+<img src="web/public/images/logo.png" width="150" alt="AniWings Logo">
 
 # AniWings 🪽
 
@@ -58,7 +58,7 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 
 | 🏠 Home | 🔍 Browse | 📅 Schedule | 🎬 Details |
 | :---: | :---: | :---: | :---: |
-| <img src="public/images/screenshot-home.jpg" width="210" alt="AniWings Home Screen"> | <img src="public/images/screenshot-browse.jpg" width="210" alt="AniWings Browse Screen"> | <img src="public/images/screenshot-schedule.jpg" width="210" alt="AniWings Schedule Screen"> | <img src="public/images/screenshot-details.jpg" width="210" alt="AniWings Details Screen"> |
+| <img src="web/public/images/screenshot-home.jpg" width="210" alt="AniWings Home Screen"> | <img src="web/public/images/screenshot-browse.jpg" width="210" alt="AniWings Browse Screen"> | <img src="web/public/images/screenshot-schedule.jpg" width="210" alt="AniWings Schedule Screen"> | <img src="web/public/images/screenshot-details.jpg" width="210" alt="AniWings Details Screen"> |
 
 </div>
 
@@ -438,6 +438,18 @@ Stay updated with AniWings development, report bugs, suggest features, or just t
 
 ---
 
+# 📁 Repository Structure
+
+```text
+aniwings-app/
+├── desktop/             # AniWings Desktop application (Flutter for Windows & Linux)
+├── web/                 # AniWings Official Web Portal & Landing Page (React + Vite)
+├── .github/workflows/   # Automated CI/CD release workflows
+└── README.md            # Official AniWings repository overview & download portal
+```
+
+---
+
 # ⚠️ Disclaimer
 
 AniWings is an independent anime client.
@@ -452,7 +464,7 @@ All anime titles, artwork, trademarks, logos, and related intellectual property 
 
 <div align="center">
 
-<img src="public/images/logo.png" width="80" alt="AniWings Logo">
+<img src="web/public/images/logo.png" width="80" alt="AniWings Logo">
 
 ## AniWings 🪽
 

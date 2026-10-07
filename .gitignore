@@ -8,10 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+web/node_modules
 dist
+web/dist
 dist-ssr
 *.local
 .data
+.wrangler
+web/.wrangler
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +27,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Desktop Flutter
+desktop/.dart_tool/
+desktop/build/
+desktop/release/
+desktop/.vs/
+desktop/*.iml
+desktop/.flutter-plugins*

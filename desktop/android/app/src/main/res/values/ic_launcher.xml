@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the dark background baked into the AniWings TV icon. -->
+    <color name="ic_launcher_background">#090B13</color>
+</resources>
