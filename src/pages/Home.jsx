@@ -6,6 +6,7 @@ export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
   const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
+  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
@@ -25,7 +26,8 @@ export default function Home({ updateData }) {
   const desktopData = updateData?.desktop;
   const desktopDownloadUrl = desktopData?.url || DEFAULT_DESKTOP_WINDOWS_URL;
   const desktopWindowsDownloadUrl = desktopData?.windowsUrl || desktopDownloadUrl;
-  const desktopFileSize = desktopData?.fileSize || '15.3 MB';
+  const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
+  const desktopFileSize = desktopData?.fileSize || '15.3 MB - 41.7 MB';
   const desktopVersion = desktopData?.version || '1.2.5';
   const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-07';
   const desktopReleaseNotes = desktopData?.releaseNotes;
@@ -396,9 +398,9 @@ export default function Home({ updateData }) {
                 <i className="ri-computer-line"></i>
               </div>
               <h3 className="dlu-title">Desktop</h3>
-              <p className="dlu-desc">{desktopFileSize} • Windows 10 &amp; 11 (64-bit).</p>
+              <p className="dlu-desc">{desktopFileSize} • Select build for Windows &amp; Linux PC.</p>
               <div className="dlu-detail">
-                <div className="dlu-btn">
+                <div className="dlu-btn-group">
                   <a 
                     href={directDownloadUrl(desktopWindowsDownloadUrl)} 
                     onClick={() => handleDownloadClick(desktopWindowsDownloadUrl, 'desktop-windows')}
@@ -408,6 +410,16 @@ export default function Home({ updateData }) {
                   >
                     <i className="ri-windows-fill"></i>
                     <span>Windows (.exe) <span className="btn-tag">Win 10/11</span></span>
+                  </a>
+                  <a 
+                    href={directDownloadUrl(desktopLinuxDownloadUrl)} 
+                    onClick={() => handleDownloadClick(desktopLinuxDownloadUrl, 'desktop-linux')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-linux-fill"></i>
+                    <span>Linux (.AppImage) <span className="btn-tag">Universal</span></span>
                   </a>
                 </div>
               </div>
