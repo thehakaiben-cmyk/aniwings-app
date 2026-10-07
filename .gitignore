@@ -27,11 +27,3 @@ web/.wrangler
 *.njsproj
 *.sln
 *.sw?
-
-# Desktop Flutter
-desktop/.dart_tool/
-desktop/build/
-desktop/release/
-desktop/.vs/
-desktop/*.iml
-desktop/.flutter-plugins*

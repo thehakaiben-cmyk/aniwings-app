@@ -476,9 +476,9 @@ Stay updated with AniWings development, report bugs, suggest features, or just t
 
 ```text
 aniwings-app/
-├── desktop/             # AniWings Desktop application (Flutter for Windows & Linux)
 ├── web/                 # AniWings Official Web Portal & Landing Page (React + Vite)
 ├── dist/                # Production web build bundle for deployment
+├── wrangler.json        # Cloudflare deployment configuration
 └── README.md            # Official AniWings repository overview & download portal
 ```
 
