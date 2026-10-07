@@ -4,12 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Target GitHub Release tag (e.g. v1.2.5)'
+        description: 'Target GitHub Release tag (e.g. desktop-v1.2.5)'
         required: true
-        default: 'v1.2.5'
+        default: 'desktop-v1.2.5'
   push:
     tags:
-      - 'v*'
       - 'desktop-v*'
 
 permissions:

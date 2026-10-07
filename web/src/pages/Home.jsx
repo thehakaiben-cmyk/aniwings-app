@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
-  const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
-  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
+  const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
+  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;

@@ -25,9 +25,9 @@
   },
   "desktop": {
     "version": "1.2.5",
-    "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe",
-    "windowsUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe",
-    "linuxUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage",
+    "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe",
+    "windowsUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe",
+    "linuxUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage",
     "windowsFileName": "aniwings-desktop-windows-v1.2.5.exe",
     "linuxFileName": "aniwings-desktop-linux-v1.2.5.AppImage",
     "mandatory": true,

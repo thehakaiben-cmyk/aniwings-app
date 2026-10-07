@@ -12,7 +12,7 @@
 
 [![Android](https://img.shields.io/badge/Android-v1.2.5-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk)
 [![Android TV](https://img.shields.io/badge/Android_TV-v1.2.5-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk)
-[![Desktop](https://img.shields.io/badge/Desktop-v1.2.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe)
+[![Desktop](https://img.shields.io/badge/Desktop-v1.2.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
 <br>
@@ -100,8 +100,8 @@ Native desktop builds for **Windows 10/11** and **Linux distributions**.
 
 | Build | Recommended For | Download |
 | --- | --- | :---: |
-| **Windows (.exe)** | Windows 10 & 11 (64-bit) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
-| **Linux (.AppImage)** | Universal Linux (x86_64) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
+| **Windows (.exe)** | Windows 10 & 11 (64-bit) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
+| **Linux (.AppImage)** | Universal Linux (x86_64) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
 
 > 💻 Choose the **Windows (.exe)** setup for Windows PCs, or the standalone **Linux (.AppImage)** for Linux distributions.
 
