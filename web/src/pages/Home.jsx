@@ -5,6 +5,7 @@ export default function Home({ updateData }) {
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
   const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe';
   const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
+  const DEFAULT_DESKTOP_PORTABLE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-portable.zip';
   const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
@@ -25,6 +26,7 @@ export default function Home({ updateData }) {
   const desktopData = updateData?.desktop;
   const desktopSetupDownloadUrl = desktopData?.windowsSetupUrl || desktopData?.setupUrl || DEFAULT_DESKTOP_SETUP_URL;
   const desktopExeDownloadUrl = desktopData?.windowsExeUrl || desktopData?.exeUrl || desktopData?.windowsUrl || DEFAULT_DESKTOP_EXE_URL;
+  const desktopPortableZipDownloadUrl = desktopData?.windowsPortableUrl || desktopData?.portableUrl || DEFAULT_DESKTOP_PORTABLE_URL;
   const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
   const desktopFileSize = desktopData?.fileSize || '42 MB - 82 MB';
   const desktopVersion = desktopData?.version || '1.2.5';
@@ -278,7 +280,7 @@ export default function Home({ updateData }) {
       <div className="section section-download reveal" id="section-download">
         <div className="container">
           <h2 className="section-title">Grab the Latest AniWings Release</h2>
-          <p className="section-desc">Fetch the installable files below and launch your new premium anime experience.</p>
+          <p className="section-desc">Over 8,600+ downloads across Mobile, TV &amp; Desktop. Fetch the installable files below and launch your new premium anime experience.</p>
           
           <div className="dl-ul">
             {/* Android Mobile */}
@@ -287,7 +289,7 @@ export default function Home({ updateData }) {
                 <i className="ri-android-line"></i>
               </div>
               <h3 className="dlu-title">Android Mobile</h3>
-              <p className="dlu-desc">{fileSize} • Select build for Android Mobiles & Tablets.</p>
+              <p className="dlu-desc">{fileSize} • Select build for Android Mobiles &amp; Tablets.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
@@ -327,7 +329,7 @@ export default function Home({ updateData }) {
                 <i className="ri-tv-line"></i>
               </div>
               <h3 className="dlu-title">Android TV</h3>
-              <p className="dlu-desc">{tvFileSize} • Select build for Smart TVs & TV boxes.</p>
+              <p className="dlu-desc">{tvFileSize} • Select build for Smart TVs &amp; TV boxes.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
@@ -386,7 +388,16 @@ export default function Home({ updateData }) {
                     className="btn btn-lg btn-secondary dlu-split-btn"
                   >
                     <i className="ri-file-code-line"></i>
-                    <span>Full Standalone (.exe) <span className="btn-tag">Portable</span></span>
+                    <span>Standalone (.exe) <span className="btn-tag">Portable</span></span>
+                  </a>
+                  <a 
+                    href={directDownloadUrl(desktopPortableZipDownloadUrl)} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-file-zip-line"></i>
+                    <span>Portable ZIP (.zip) <span className="btn-tag">Archive</span></span>
                   </a>
                   <a 
                     href={directDownloadUrl(desktopLinuxDownloadUrl)} 

@@ -4,15 +4,16 @@
 
 # AniWings 🪽
 
-### Modern Anime Streaming for Android & Android TV
+### Modern Anime Streaming for Android, Android TV & Desktop
 
-**Clean UI · SUB & DUB · Extensions · Downloads · Anime Tracking · Android TV**
+**Clean UI · SUB & DUB · Extensions · Downloads · Anime Tracking · TV & Desktop Support**
 
 <br>
 
-[![Android](https://img.shields.io/badge/Android-v1.2.5-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk)
-[![Android TV](https://img.shields.io/badge/Android_TV-v1.2.5-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk)
-[![Desktop](https://img.shields.io/badge/Desktop-v1.2.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe)
+[![Total Downloads](https://img.shields.io/badge/Total_Downloads-8.6k+-FF2A54?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![Mobile Downloads](https://img.shields.io/badge/Mobile-7.7k+_Downloads-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![TV Downloads](https://img.shields.io/badge/Android_TV-800+_Downloads-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![Desktop](https://img.shields.io/badge/Desktop-New_Release-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
 <br>
@@ -25,86 +26,89 @@
 
 <br>
 
-**[Download](#-downloads) • [Features](#-features) • [Extensions](#-mobile-extension-support) • [Screenshots](#-screenshots) • [Installation](#-installation) • [Community](#-community)**
+**[Downloads](#-downloads) • [Download Statistics](#-download-statistics) • [Features](#-features) • [Extensions](#-mobile-extension-support) • [Installation](#-installation) • [Community](#-community)**
 
 </div>
 
 ---
 
+## 📊 Download Statistics
+
+Total download counts breakdown across all official releases:
+
+| Device / Platform | Total Downloads | Latest Version | Supported Systems & Formats |
+| :--- | :---: | :---: | :--- |
+| 📱 **Android Mobile** | **7,791+** (~7.8k) | `v1.2.5` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
+| 📺 **Android TV** | **819+** | `v1.2.5` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
+| 💻 **Desktop (PC)** | **8+** *(New)* | `v1.2.5` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
+| 🌟 **Total Across Devices** | **8,618+** (~8.6k) | — | **All Supported Platforms** |
+
+---
+
 ## 🪽 What is AniWings?
 
-**AniWings** is a modern anime streaming client designed for **Android phones, tablets, Android TV, Google TV, Amazon Fire TV, and NVIDIA Shield TV**.
+**AniWings** is a modern anime streaming client designed for **Android phones, tablets, Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and Desktop (Windows & Linux)**.
 
-Discover anime, browse seasonal releases, follow airing schedules, manage your library, track episodes, use multiple providers, install provider extensions, download supported episodes, and watch through an interface designed specifically for both mobile devices and televisions.
+Discover anime, browse seasonal releases, follow airing schedules, manage your library, track episodes, use multiple providers, install provider extensions, download supported episodes, and watch through an interface designed specifically for mobile devices, televisions, and desktop PCs.
 
 > **No mandatory AniWings account. No intrusive advertising. Just anime.**
 
 ### Why AniWings?
 
 - 🚫 **No Mandatory Sign-up** — Start browsing and watching without creating an AniWings account.
-- 🎨 **Modern Interface** — A redesigned experience built for phones, tablets, and televisions.
+- 🎨 **Modern Interface** — A redesigned experience built for phones, tablets, televisions, and desktop computers.
 - 🎬 **Multiple Providers** — Switch between available streaming sources when needed.
 - 🔌 **Extension Support** — Expand AniWings Mobile with additional provider extensions.
 - ⬇️ **Offline Downloads** — Download supported episodes for offline viewing.
 - 📊 **Anime Tracking** — Support for AniList, MyAnimeList, Kitsu, and AniDB.
 - 📺 **Dedicated TV Experience** — TV-optimized layouts with full D-pad navigation.
+- 💻 **Desktop Experience** — High performance native client for Windows and Linux.
 - 🗣️ **SUB & DUB** — Access subtitled and dubbed sources where available.
-
----
-
-# 📸 Screenshots
-
-<div align="center">
-
-| 🏠 Home | 🔍 Browse | 📅 Schedule | 🎬 Details |
-| :---: | :---: | :---: | :---: |
-| <img src="web/public/images/screenshot-home.jpg" width="210" alt="AniWings Home Screen"> | <img src="web/public/images/screenshot-browse.jpg" width="210" alt="AniWings Browse Screen"> | <img src="web/public/images/screenshot-schedule.jpg" width="210" alt="AniWings Schedule Screen"> | <img src="web/public/images/screenshot-details.jpg" width="210" alt="AniWings Details Screen"> |
-
-</div>
 
 ---
 
 # 📥 Downloads
 
-## 📱 Android Mobile — v1.2.5
+## 📱 Android Mobile — v1.2.5 `(7,791+ Downloads)`
 
 Choose the build that best matches your Android device.
 
-| Build | Recommended For | Download |
+| Build | Architecture / Device | Download |
 | --- | --- | :---: |
-| **Universal** | Most Android devices | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk) |
-| **ARM64-v8a** | Modern 64-bit devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk) |
-| **armeabi-v7a** | Older 32-bit devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk) |
+| **Universal APK** | Most Android phones & tablets (All ABIs) | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk) |
+| **ARM64-v8a APK** | Modern 64-bit Android devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk) |
+| **armeabi-v7a APK** | Older 32-bit Android devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk) |
 
 > 💡 **Not sure which one to download?** Choose the **Universal APK**.
 
 ---
 
-## 📺 Android TV — v1.2.5
+## 📺 Android TV — v1.2.5 `(819+ Downloads)`
 
 Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and compatible Android TV boxes**.
 
-| Build | Recommended For | Download |
+| Build | Recommended Device | Download |
 | --- | --- | :---: |
-| **Universal TV** | Most TVs & TV boxes | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk) |
-| **ARM64-v8a TV** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk) |
-| **armeabi-v7a TV** | Older TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk) |
+| **Universal TV APK** | Most TVs & TV boxes (All ABIs) | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk) |
+| **ARM64-v8a TV APK** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk) |
+| **armeabi-v7a TV APK** | Older 32-bit TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk) |
 
 > 📺 For most televisions and TV boxes, choose the **Universal TV APK**.
 
 ---
 
-## 💻 Desktop (Windows & Linux) — v1.2.5
+## 💻 Desktop (Windows & Linux) — v1.2.5 `(8+ Downloads)`
 
-Native desktop builds for **Windows 10/11** and **Linux distributions**.
+Native desktop builds for **Windows 10/11 (64-bit)** and **Linux distributions**.
 
-| Build | Recommended For | Download |
+| Build | Type & Recommendation | Download |
 | --- | --- | :---: |
-| **Windows Setup (.exe)** | Windows 10 & 11 (Installer) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe) |
-| **Windows Standalone (.exe)** | Windows 10 & 11 (Portable / Full EXE) | [![Download](https://img.shields.io/badge/Download-Standalone_EXE-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
-| **Linux (.AppImage)** | Universal Linux (x86_64) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
+| **Windows Setup (.exe)** | Windows 10 & 11 (Installer with Start & Desktop shortcuts) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe) |
+| **Windows Standalone (.exe)** | Windows 10 & 11 (Portable Single Executable / Direct Run) | [![Download](https://img.shields.io/badge/Download-Standalone_EXE-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
+| **Windows Portable (.zip)** | Windows 10 & 11 (Portable Archive / No Installation) | [![Download](https://img.shields.io/badge/Download-Portable_ZIP-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-portable.zip) |
+| **Linux (.AppImage)** | Universal Linux x86_64 (Self-contained AppImage) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
 
-> 💻 Choose the **Windows Setup (.exe)** for standard installation with Start menu and Desktop shortcuts, **Windows Standalone (.exe)** for portable zero-install use, or **Linux (.AppImage)** for Linux distributions.
+> 💻 **Recommendation:** Use **Windows Setup (.exe)** for standard installation, **Windows Standalone (.exe)** or **Portable (.zip)** for zero-install portable use, or **Linux (.AppImage)** on Linux distributions.
 
 ---
 
@@ -351,45 +355,74 @@ aniwings-tv-v1.2.5-universal.apk
 
 </details>
 
+<br>
+
+<details>
+
+<summary><b>💻 Desktop (Windows 10/11 & Linux)</b></summary>
+
+<br>
+
+### 🪟 Windows (10 & 11)
+- **Installer (Recommended):** Download `aniwings-desktop-windows-v1.2.5-setup.exe` and run the installer. Creates Start Menu and Desktop shortcuts.
+- **Standalone:** Download `aniwings-desktop-windows-v1.2.5.exe` to run immediately with zero installation.
+- **Portable ZIP:** Download `aniwings-desktop-windows-v1.2.5-portable.zip`, extract to any folder, and run `aniwings.exe`.
+
+### 🐧 Linux (x86_64)
+1. Download `aniwings-desktop-linux-v1.2.5.AppImage`.
+2. Make it executable:
+   ```bash
+   chmod +x aniwings-desktop-linux-v1.2.5.AppImage
+   ```
+3. Launch:
+   ```bash
+   ./aniwings-desktop-linux-v1.2.5.AppImage
+   ```
+
+</details>
+
 ---
 
 # 🖥️ Platform Support
 
-| Platform | AniWings |
-| --- | :---: |
-| 📱 Android Phone | ✅ |
-| 📱 Android Tablet | ✅ |
-| 📺 Android TV | ✅ |
-| 📺 Google TV | ✅ |
-| 🔥 Amazon Fire TV | ✅ |
-| 🛡️ NVIDIA Shield TV | ✅ |
-| 🍎 iPhone | 🚧 Coming Soon |
-| 🍎 iPad | 🚧 Coming Soon |
+| Platform | AniWings | Format / Details |
+| --- | :---: | :--- |
+| 📱 Android Phone | ✅ | Universal, ARM64, ARMv7 APKs |
+| 📱 Android Tablet | ✅ | Universal, ARM64, ARMv7 APKs |
+| 📺 Android TV | ✅ | TV-optimized Universal, ARM64, ARMv7 APKs |
+| 📺 Google TV | ✅ | Full TV experience |
+| 🔥 Amazon Fire TV | ✅ | Fire OS compatible TV build |
+| 🛡️ NVIDIA Shield TV | ✅ | TV build |
+| 💻 Windows PC (10 & 11) | ✅ | Installer (.exe), Standalone (.exe), Portable (.zip) |
+| 🐧 Linux PC (x86_64) | ✅ | Universal Linux (.AppImage) |
+| 🍎 iPhone & iPad | 🚧 Coming Soon | iOS (.ipa) in development |
 
 ---
 
-# ⚖️ Mobile vs TV
+# ⚖️ Platform Feature Comparison
 
-Some features are platform-specific.
+Feature availability across platforms:
 
-| Feature | 📱 Mobile | 📺 TV |
-| --- | :---: | :---: |
-| Anime Streaming | ✅ | ✅ |
-| SUB / DUB | ✅ | ✅ |
-| Multiple Providers | ✅ | ✅ |
-| Extension System | ✅ | ❌ |
-| Extension Manager | ✅ | ❌ |
-| Episode Downloads | ✅ | — |
-| Custom DNS | ✅ | — |
-| Profile Customization | ✅ | — |
-| Anime Tracking | ✅ | ✅ |
-| Airing Schedule | ✅ | ✅ |
-| QR Login Controller | ✅ | — |
-| QR Login Receiver | — | ✅ |
-| D-pad Navigation | — | ✅ |
-| HDR Support | — | ✅ |
-| Fire TV Support | — | ✅ |
-| NVIDIA Shield TV | — | ✅ |
+| Feature | 📱 Mobile | 📺 Android TV | 💻 Desktop |
+| --- | :---: | :---: | :---: |
+| Anime Streaming | ✅ | ✅ | ✅ |
+| SUB & DUB Audio | ✅ | ✅ | ✅ |
+| Multiple Providers | ✅ | ✅ | ✅ |
+| Extension System | ✅ | ❌ | ❌ |
+| Extension Manager | ✅ | ❌ | ❌ |
+| Episode Downloads | ✅ | — | ✅ |
+| Custom DNS | ✅ | — | — |
+| Profile Customization | ✅ | — | ✅ |
+| Anime Tracking (AniList/MAL) | ✅ | ✅ | ✅ |
+| Airing Schedule | ✅ | ✅ | ✅ |
+| QR Login Controller | ✅ | — | — |
+| QR Login Receiver | — | ✅ | — |
+| D-pad Navigation | — | ✅ | — |
+| Keyboard / Mouse Navigation | — | — | ✅ |
+| Native Window Controls | — | — | ✅ |
+| HDR Support | — | ✅ | — |
+| Fire TV Support | — | ✅ | — |
+| NVIDIA Shield TV | — | ✅ | — |
 
 ---
 
@@ -412,13 +445,13 @@ When reporting an issue, including the following information will make troublesh
 
 ```text
 Device:
-Android Version:
+Operating System & Version:
 AniWings Version:
-Mobile / TV:
+Platform (Mobile / TV / Desktop):
 Anime:
 Episode:
 Provider / Extension:
-Issue:
+Issue Description:
 ```
 
 Please avoid including private account information, email addresses, passwords, or other sensitive information in public bug reports.
@@ -445,7 +478,7 @@ Stay updated with AniWings development, report bugs, suggest features, or just t
 aniwings-app/
 ├── desktop/             # AniWings Desktop application (Flutter for Windows & Linux)
 ├── web/                 # AniWings Official Web Portal & Landing Page (React + Vite)
-├── .github/workflows/   # Automated CI/CD release workflows
+├── dist/                # Production web build bundle for deployment
 └── README.md            # Official AniWings repository overview & download portal
 ```
 
