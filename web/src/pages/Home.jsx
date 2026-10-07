@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 export default function Home({ updateData }) {
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
-  const DEFAULT_DESKTOP_WINDOWS_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
+  const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe';
+  const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
   const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
@@ -22,10 +23,10 @@ export default function Home({ updateData }) {
   const tvFileSize = tvData?.fileSize || '69.8 MB';
 
   const desktopData = updateData?.desktop;
-  const desktopDownloadUrl = desktopData?.url || DEFAULT_DESKTOP_WINDOWS_URL;
-  const desktopWindowsDownloadUrl = desktopData?.windowsUrl || desktopDownloadUrl;
+  const desktopSetupDownloadUrl = desktopData?.windowsSetupUrl || desktopData?.setupUrl || DEFAULT_DESKTOP_SETUP_URL;
+  const desktopExeDownloadUrl = desktopData?.windowsExeUrl || desktopData?.exeUrl || desktopData?.windowsUrl || DEFAULT_DESKTOP_EXE_URL;
   const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
-  const desktopFileSize = desktopData?.fileSize || '15.3 MB - 41.7 MB';
+  const desktopFileSize = desktopData?.fileSize || '42 MB - 82 MB';
   const desktopVersion = desktopData?.version || '1.2.5';
   const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-07';
   const desktopReleaseNotes = desktopData?.releaseNotes;
@@ -370,13 +371,22 @@ export default function Home({ updateData }) {
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
-                    href={directDownloadUrl(desktopWindowsDownloadUrl)} 
+                    href={directDownloadUrl(desktopSetupDownloadUrl)} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg btn-pre dlu-split-btn"
                   >
                     <i className="ri-windows-fill"></i>
-                    <span>Windows (.exe) <span className="btn-tag">Win 10/11</span></span>
+                    <span>Windows Setup (.exe) <span className="btn-tag">Installer</span></span>
+                  </a>
+                  <a 
+                    href={directDownloadUrl(desktopExeDownloadUrl)} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-secondary dlu-split-btn"
+                  >
+                    <i className="ri-file-code-line"></i>
+                    <span>Full Standalone (.exe) <span className="btn-tag">Portable</span></span>
                   </a>
                   <a 
                     href={directDownloadUrl(desktopLinuxDownloadUrl)} 
