@@ -69,15 +69,15 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 
 # 📥 Downloads
 
-## 📱 Android Mobile — v1.2.5 `(7,791+ Downloads)`
+## 📱 Android Mobile — v1.2.6 `(7,791+ Downloads)`
 
 Choose the build that best matches your Android device.
 
 | Build | Architecture / Device | Download |
 | --- | --- | :---: |
-| **Universal APK** | Most Android phones & tablets (All ABIs) | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk) |
-| **ARM64-v8a APK** | Modern 64-bit Android devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk) |
-| **armeabi-v7a APK** | Older 32-bit Android devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk) |
+| **Universal APK** | Most Android phones & tablets (All ABIs) | [![Download](https://img.shields.io/badge/Download-Universal_APK-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk) |
+| **ARM64-v8a APK** | Modern 64-bit Android devices | [![Download](https://img.shields.io/badge/Download-ARM64--v8a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-arm64-v8a.apk) |
+| **armeabi-v7a APK** | Older 32-bit Android devices | [![Download](https://img.shields.io/badge/Download-armeabi--v7a-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-armeabi-v7a.apk) |
 
 > 💡 **Not sure which one to download?** Choose the **Universal APK**.
 

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export default function Home({ updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
   const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe';
   const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
@@ -446,7 +446,7 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.2.5'} Release Notes
+                    Mobile v{updateData?.version || '1.2.6'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}

@@ -5,16 +5,16 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 const DEFAULT_UPDATE_DATA = {
-  version: '1.2.5',
-  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk',
-  universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-universal.apk',
-  arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-arm64-v8a.apk',
-  armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.5/AniWings-armeabi-v7a.apk',
+  version: '1.2.6',
+  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk',
+  universalUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk',
+  arm64Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-arm64-v8a.apk',
+  armv7Url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-armeabi-v7a.apk',
   mandatory: true,
-  releaseNotes: 'AniWings v1.2.5 Update - Fixed bugs, added intro/outro skip, swipe gesture for volume/brightness, filler and non filler filtration, leaderboard feature included.',
-  minVersion: '1.2.5',
+  releaseNotes: 'AniWings v1.2.6 Update - Fixed bugs, episode cache faster and some UI changes done.',
+  minVersion: '1.2.6',
   fileSize: '176.1 MB',
-  updatedAt: '2026-10-07',
+  updatedAt: '2026-10-10',
   appName: 'AniWings',
   tv: {
     version: '1.2.5',
