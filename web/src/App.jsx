@@ -47,6 +47,12 @@ const DEFAULT_UPDATE_DATA = {
     fileSize: '42 MB - 82 MB',
     updatedAt: '2026-10-07',
     appName: 'AniWings Desktop'
+  },
+  downloadStats: {
+    total: 8950,
+    mobile: 8058,
+    tv: 869,
+    desktop: 23
   }
 };
 

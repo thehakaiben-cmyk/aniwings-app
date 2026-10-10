@@ -1,6 +1,26 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { fetchLiveDownloadStats, FALLBACK_STATS } from '../utils/githubStats';
 
 export default function Home({ updateData }) {
+  const initialStats = updateData?.downloadStats || FALLBACK_STATS;
+  const [downloadStats, setDownloadStats] = useState(initialStats);
+
+  useEffect(() => {
+    let isMounted = true;
+    fetchLiveDownloadStats(updateData?.downloadStats).then((stats) => {
+      if (isMounted && stats) {
+        setDownloadStats(stats);
+      }
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [updateData?.downloadStats]);
+
+  const formatCount = (count) => {
+    return (count || 0).toLocaleString();
+  };
+
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
   const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe';
@@ -74,9 +94,10 @@ export default function Home({ updateData }) {
           <div className="big-intro-content reveal active">
             <div className="bi-left">
               <div className="version-badge">
-                <span className="badge-new">NEW</span>
+                <span className="badge-new">v{updateData?.version || '1.2.6'}</span>
                 <span className="version-text">
-                  Latest Stable Build is Live!
+                  <i className="ri-download-cloud-line" style={{ marginRight: '5px' }}></i>
+                  {formatCount(downloadStats.total)}+ Total Downloads
                 </span>
               </div>
               <h1 className="heading">
@@ -280,7 +301,7 @@ export default function Home({ updateData }) {
       <div className="section section-download reveal" id="section-download">
         <div className="container">
           <h2 className="section-title">Grab the Latest AniWings Release</h2>
-          <p className="section-desc">Over 8,600+ downloads across Mobile, TV &amp; Desktop. Fetch the installable files below and launch your new premium anime experience.</p>
+          <p className="section-desc">Over {formatCount(downloadStats.total)}+ downloads across Mobile, TV &amp; Desktop. Fetch the installable files below and launch your new premium anime experience.</p>
           
           <div className="dl-ul">
             {/* Android Mobile */}
@@ -289,7 +310,7 @@ export default function Home({ updateData }) {
                 <i className="ri-android-line"></i>
               </div>
               <h3 className="dlu-title">Android Mobile</h3>
-              <p className="dlu-desc">{fileSize} • Select build for Android Mobiles &amp; Tablets.</p>
+              <p className="dlu-desc">{fileSize} • {formatCount(downloadStats.mobile)}+ downloads • Select build for Android Mobiles &amp; Tablets.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
@@ -329,7 +350,7 @@ export default function Home({ updateData }) {
                 <i className="ri-tv-line"></i>
               </div>
               <h3 className="dlu-title">Android TV</h3>
-              <p className="dlu-desc">{tvFileSize} • Select build for Smart TVs &amp; TV boxes.</p>
+              <p className="dlu-desc">{tvFileSize} • {formatCount(downloadStats.tv)}+ downloads • Select build for Smart TVs &amp; TV boxes.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 
@@ -369,7 +390,7 @@ export default function Home({ updateData }) {
                 <i className="ri-computer-line"></i>
               </div>
               <h3 className="dlu-title">Desktop</h3>
-              <p className="dlu-desc">{desktopFileSize} • Select build for Windows &amp; Linux PC.</p>
+              <p className="dlu-desc">{desktopFileSize} • {formatCount(downloadStats.desktop)}+ downloads • Select build for Windows &amp; Linux PC.</p>
               <div className="dlu-detail">
                 <div className="dlu-btn-group">
                   <a 

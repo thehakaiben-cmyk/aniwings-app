@@ -38,10 +38,10 @@ Total download counts breakdown across all official releases:
 
 | Device / Platform | Total Downloads | Latest Version | Supported Systems & Formats |
 | :--- | :---: | :---: | :--- |
-| 📱 **Android Mobile** | **7,791+** (~7.8k) | `v1.2.5` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
-| 📺 **Android TV** | **819+** | `v1.2.5` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
-| 💻 **Desktop (PC)** | **8+** *(New)* | `v1.2.5` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
-| 🌟 **Total Across Devices** | **8,618+** (~8.6k) | — | **All Supported Platforms** |
+| 📱 **Android Mobile** | **8,058+** (~8.1k) | `v1.2.6` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
+| 📺 **Android TV** | **869+** | `v1.2.5` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
+| 💻 **Desktop (PC)** | **23+** *(New)* | `v1.2.5` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
+| 🌟 **Total Across Devices** | **8,950+** (~8.9k) | — | **All Supported Platforms** |
 
 ---
 
@@ -69,7 +69,7 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 
 # 📥 Downloads
 
-## 📱 Android Mobile — v1.2.6 `(7,791+ Downloads)`
+## 📱 Android Mobile — v1.2.6 `(8,058+ Downloads)`
 
 Choose the build that best matches your Android device.
 
@@ -83,7 +83,7 @@ Choose the build that best matches your Android device.
 
 ---
 
-## 📺 Android TV — v1.2.5 `(819+ Downloads)`
+## 📺 Android TV — v1.2.5 `(869+ Downloads)`
 
 Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and compatible Android TV boxes**.
 
@@ -97,7 +97,7 @@ Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and com
 
 ---
 
-## 💻 Desktop (Windows & Linux) — v1.2.5 `(8+ Downloads)`
+## 💻 Desktop (Windows & Linux) — v1.2.5 `(23+ Downloads)`
 
 Native desktop builds for **Windows 10/11 (64-bit)** and **Linux distributions**.
 
