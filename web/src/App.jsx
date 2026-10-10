@@ -13,7 +13,7 @@ const DEFAULT_UPDATE_DATA = {
   mandatory: true,
   releaseNotes: 'AniWings v1.2.6 Update - Fixed bugs, episode cache faster and some UI changes done.',
   minVersion: '1.2.6',
-  fileSize: '176.1 MB',
+  fileSize: '176.7 MB',
   updatedAt: '2026-10-10',
   appName: 'AniWings',
   tv: {
