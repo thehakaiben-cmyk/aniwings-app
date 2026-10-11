@@ -3,10 +3,10 @@ const CACHE_KEY = 'aniwings_download_stats_v1';
 const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutes cache to avoid hitting GitHub rate limits
 
 export const FALLBACK_STATS = {
-  total: 8950,
+  total: 8954,
   mobile: 8058,
   tv: 869,
-  desktop: 23,
+  desktop: 27,
 };
 
 export async function fetchLiveDownloadStats(initialFallback = FALLBACK_STATS) {

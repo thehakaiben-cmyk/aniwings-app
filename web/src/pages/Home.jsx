@@ -23,10 +23,10 @@ export default function Home({ updateData }) {
 
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
-  const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe';
-  const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe';
-  const DEFAULT_DESKTOP_PORTABLE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-portable.zip';
-  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage';
+  const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe';
+  const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6.exe';
+  const DEFAULT_DESKTOP_PORTABLE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-portable.zip';
+  const DEFAULT_DESKTOP_LINUX_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-linux-v1.2.6.AppImage';
 
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const universalDownloadUrl = updateData?.universalUrl || downloadUrl;
@@ -48,9 +48,9 @@ export default function Home({ updateData }) {
   const desktopExeDownloadUrl = desktopData?.windowsExeUrl || desktopData?.exeUrl || desktopData?.windowsUrl || DEFAULT_DESKTOP_EXE_URL;
   const desktopPortableZipDownloadUrl = desktopData?.windowsPortableUrl || desktopData?.portableUrl || DEFAULT_DESKTOP_PORTABLE_URL;
   const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
-  const desktopFileSize = desktopData?.fileSize || '42 MB - 82 MB';
-  const desktopVersion = desktopData?.version || '1.2.5';
-  const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-07';
+  const desktopFileSize = desktopData?.fileSize || '6 MB - 42 MB';
+  const desktopVersion = desktopData?.version || '1.2.6';
+  const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-11';
   const desktopReleaseNotes = desktopData?.releaseNotes;
 
   useEffect(() => {

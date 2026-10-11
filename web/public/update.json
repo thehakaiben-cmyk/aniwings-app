@@ -24,28 +24,28 @@
     "appName": "AniWings TV"
   },
   "desktop": {
-    "version": "1.2.5",
-    "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe",
-    "windowsUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe",
-    "windowsSetupUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe",
-    "windowsExeUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe",
-    "windowsPortableUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-portable.zip",
-    "linuxUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage",
-    "windowsSetupFileName": "aniwings-desktop-windows-v1.2.5-setup.exe",
-    "windowsExeFileName": "aniwings-desktop-windows-v1.2.5.exe",
-    "windowsFileName": "aniwings-desktop-windows-v1.2.5-setup.exe",
-    "linuxFileName": "aniwings-desktop-linux-v1.2.5.AppImage",
+    "version": "1.2.6",
+    "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe",
+    "windowsUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe",
+    "windowsSetupUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe",
+    "windowsExeUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6.exe",
+    "windowsPortableUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-portable.zip",
+    "linuxUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-linux-v1.2.6.AppImage",
+    "windowsSetupFileName": "aniwings-desktop-windows-v1.2.6-setup.exe",
+    "windowsExeFileName": "aniwings-desktop-windows-v1.2.6.exe",
+    "windowsFileName": "aniwings-desktop-windows-v1.2.6-setup.exe",
+    "linuxFileName": "aniwings-desktop-linux-v1.2.6.AppImage",
     "mandatory": true,
-    "releaseNotes": "AniWings Desktop v1.2.5 Release - Brand new app launched for desktop with features included from mobile version.",
-    "minVersion": "1.2.5",
-    "fileSize": "42 MB - 82 MB",
-    "updatedAt": "2026-10-07",
+    "releaseNotes": "AniWings Desktop v1.2.6 Release - Fixed bugs, some UI changes and optimised smoother performance.",
+    "minVersion": "1.2.6",
+    "fileSize": "6 MB - 42 MB",
+    "updatedAt": "2026-10-11",
     "appName": "AniWings Desktop"
   },
   "downloadStats": {
-    "total": 8950,
+    "total": 8954,
     "mobile": 8058,
     "tv": 869,
-    "desktop": 23
+    "desktop": 27
   }
 }

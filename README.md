@@ -40,8 +40,8 @@ Total download counts breakdown across all official releases:
 | :--- | :---: | :---: | :--- |
 | 📱 **Android Mobile** | **8,058+** (~8.1k) | `v1.2.6` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
 | 📺 **Android TV** | **869+** | `v1.2.5` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
-| 💻 **Desktop (PC)** | **23+** *(New)* | `v1.2.5` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
-| 🌟 **Total Across Devices** | **8,950+** (~8.9k) | — | **All Supported Platforms** |
+| 💻 **Desktop (PC)** | **27+** *(New)* | `v1.2.6` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
+| 🌟 **Total Across Devices** | **8,954+** (~9.0k) | — | **All Supported Platforms** |
 
 ---
 
@@ -97,16 +97,16 @@ Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and com
 
 ---
 
-## 💻 Desktop (Windows & Linux) — v1.2.5 `(23+ Downloads)`
+## 💻 Desktop (Windows & Linux) — v1.2.6 `(27+ Downloads)`
 
 Native desktop builds for **Windows 10/11 (64-bit)** and **Linux distributions**.
 
 | Build | Type & Recommendation | Download |
 | --- | --- | :---: |
-| **Windows Setup (.exe)** | Windows 10 & 11 (Installer with Start & Desktop shortcuts) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-setup.exe) |
-| **Windows Standalone (.exe)** | Windows 10 & 11 (Portable Single Executable / Direct Run) | [![Download](https://img.shields.io/badge/Download-Standalone_EXE-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5.exe) |
-| **Windows Portable (.zip)** | Windows 10 & 11 (Portable Archive / No Installation) | [![Download](https://img.shields.io/badge/Download-Portable_ZIP-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-windows-v1.2.5-portable.zip) |
-| **Linux (.AppImage)** | Universal Linux x86_64 (Self-contained AppImage) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.5/aniwings-desktop-linux-v1.2.5.AppImage) |
+| **Windows Setup (.exe)** | Windows 10 & 11 (Installer with Start & Desktop shortcuts) | [![Download](https://img.shields.io/badge/Download-Windows_Setup-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe) |
+| **Windows Standalone (.exe)** | Windows 10 & 11 (Portable Single Executable / Direct Run) | [![Download](https://img.shields.io/badge/Download-Standalone_EXE-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6.exe) |
+| **Windows Portable (.zip)** | Windows 10 & 11 (Portable Archive / No Installation) | [![Download](https://img.shields.io/badge/Download-Portable_ZIP-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-portable.zip) |
+| **Linux (.AppImage)** | Universal Linux x86_64 (Self-contained AppImage) | [![Download](https://img.shields.io/badge/Download-Linux_AppImage-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-linux-v1.2.6.AppImage) |
 
 > 💻 **Recommendation:** Use **Windows Setup (.exe)** for standard installation, **Windows Standalone (.exe)** or **Portable (.zip)** for zero-install portable use, or **Linux (.AppImage)** on Linux distributions.
 
