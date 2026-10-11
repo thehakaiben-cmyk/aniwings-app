@@ -48,7 +48,7 @@ export default function Home({ updateData }) {
   const desktopExeDownloadUrl = desktopData?.windowsExeUrl || desktopData?.exeUrl || desktopData?.windowsUrl || DEFAULT_DESKTOP_EXE_URL;
   const desktopPortableZipDownloadUrl = desktopData?.windowsPortableUrl || desktopData?.portableUrl || DEFAULT_DESKTOP_PORTABLE_URL;
   const desktopLinuxDownloadUrl = desktopData?.linuxUrl || DEFAULT_DESKTOP_LINUX_URL;
-  const desktopFileSize = desktopData?.fileSize || '42 MB - 78 MB';
+  const desktopFileSize = desktopData?.fileSize || '42 MB - 82 MB';
   const desktopVersion = desktopData?.version || '1.2.6';
   const desktopUpdatedAt = desktopData?.updatedAt || '2026-10-11';
   const desktopReleaseNotes = desktopData?.releaseNotes;

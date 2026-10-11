@@ -44,7 +44,7 @@ const DEFAULT_UPDATE_DATA = {
     mandatory: true,
     releaseNotes: 'AniWings Desktop v1.2.6 Release - Fixed bugs, some UI changes and optimised smoother performance.',
     minVersion: '1.2.6',
-    fileSize: '42 MB - 78 MB',
+    fileSize: '42 MB - 82 MB',
     updatedAt: '2026-10-11',
     appName: 'AniWings Desktop'
   },
