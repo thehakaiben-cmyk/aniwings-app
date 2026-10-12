@@ -22,7 +22,7 @@ export default function Home({ updateData }) {
   };
 
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk';
-  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk';
+  const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-universal.apk';
   const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe';
   const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6.exe';
   const DEFAULT_DESKTOP_PORTABLE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-portable.zip';
@@ -492,10 +492,10 @@ export default function Home({ updateData }) {
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
                   <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
                     <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
-                    Android TV v{tvData?.version || '1.2.5'} Release Notes
+                    Android TV v{tvData?.version || '1.2.6'} Release Notes
                   </h4>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    Released: {tvData?.updatedAt || '2026-10-07'}
+                    Released: {tvData?.updatedAt || '2026-10-12'}
                   </span>
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>

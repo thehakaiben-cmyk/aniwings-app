@@ -39,7 +39,7 @@ Total download counts breakdown across all official releases:
 | Device / Platform | Total Downloads | Latest Version | Supported Systems & Formats |
 | :--- | :---: | :---: | :--- |
 | 📱 **Android Mobile** | **8,058+** (~8.1k) | `v1.2.6` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
-| 📺 **Android TV** | **869+** | `v1.2.5` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
+| 📺 **Android TV** | **869+** | `v1.2.6` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
 | 💻 **Desktop (PC)** | **27+** *(New)* | `v1.2.6` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
 | 🌟 **Total Across Devices** | **8,954+** (~9.0k) | — | **All Supported Platforms** |
 
@@ -83,15 +83,15 @@ Choose the build that best matches your Android device.
 
 ---
 
-## 📺 Android TV — v1.2.5 `(869+ Downloads)`
+## 📺 Android TV — v1.2.6 `(869+ Downloads)`
 
 Optimized for **Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and compatible Android TV boxes**.
 
 | Build | Recommended Device | Download |
 | --- | --- | :---: |
-| **Universal TV APK** | Most TVs & TV boxes (All ABIs) | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-universal.apk) |
-| **ARM64-v8a TV APK** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-arm64-v8a.apk) |
-| **armeabi-v7a TV APK** | Older 32-bit TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.5/aniwings-tv-v1.2.5-armeabi-v7a.apk) |
+| **Universal TV APK** | Most TVs & TV boxes (All ABIs) | [![Download](https://img.shields.io/badge/Download-TV_Universal-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-universal.apk) |
+| **ARM64-v8a TV APK** | Modern 64-bit TV devices | [![Download](https://img.shields.io/badge/Download-TV_ARM64-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-arm64-v8a.apk) |
+| **armeabi-v7a TV APK** | Older 32-bit TV boxes | [![Download](https://img.shields.io/badge/Download-TV_ARMv7-00A8E1?style=flat-square&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-armeabi-v7a.apk) |
 
 > 📺 For most televisions and TV boxes, choose the **Universal TV APK**.
 
@@ -343,7 +343,7 @@ https://aniwings-app.pages.dev
 1. Download:
 
 ```text
-aniwings-tv-v1.2.5-universal.apk
+aniwings-tv-v1.2.6-universal.apk
 ```
 
 2. Copy the APK to a USB flash drive.
@@ -364,19 +364,19 @@ aniwings-tv-v1.2.5-universal.apk
 <br>
 
 ### 🪟 Windows (10 & 11)
-- **Installer (Recommended):** Download `aniwings-desktop-windows-v1.2.5-setup.exe` and run the installer. Creates Start Menu and Desktop shortcuts.
-- **Standalone:** Download `aniwings-desktop-windows-v1.2.5.exe` to run immediately with zero installation.
-- **Portable ZIP:** Download `aniwings-desktop-windows-v1.2.5-portable.zip`, extract to any folder, and run `aniwings.exe`.
+- **Installer (Recommended):** Download `aniwings-desktop-windows-v1.2.6-setup.exe` and run the installer. Creates Start Menu and Desktop shortcuts.
+- **Standalone:** Download `aniwings-desktop-windows-v1.2.6.exe` to run immediately with zero installation.
+- **Portable ZIP:** Download `aniwings-desktop-windows-v1.2.6-portable.zip`, extract to any folder, and run `aniwings.exe`.
 
 ### 🐧 Linux (x86_64)
-1. Download `aniwings-desktop-linux-v1.2.5.AppImage`.
+1. Download `aniwings-desktop-linux-v1.2.6.AppImage`.
 2. Make it executable:
    ```bash
-   chmod +x aniwings-desktop-linux-v1.2.5.AppImage
+   chmod +x aniwings-desktop-linux-v1.2.6.AppImage
    ```
 3. Launch:
    ```bash
-   ./aniwings-desktop-linux-v1.2.5.AppImage
+   ./aniwings-desktop-linux-v1.2.6.AppImage
    ```
 
 </details>
