@@ -734,9 +734,9 @@ strong {
 
 .dl-ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 24px;
-    max-width: 1240px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -885,7 +885,7 @@ strong {
 
 @media (min-width: 1200px) {
     #section-download .container {
-        max-width: 1260px;
+        max-width: 1360px;
     }
 }
 

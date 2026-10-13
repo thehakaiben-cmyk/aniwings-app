@@ -468,53 +468,29 @@ export default function Home({ updateData }) {
           </div>
 
           {/* Release Notes Cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
+          <div className="dl-ul release-notes-grid" style={{ marginTop: '24px' }}>
             {/* Mobile Release Notes */}
             {releaseNotes && (
               <div className="release-notes-card" style={{
-                padding: '1.5rem 2rem',
-                borderRadius: '16px',
+                padding: '1.35rem 1.25rem',
+                borderRadius: '18px',
                 background: 'rgba(255, 255, 255, 0.02)',
                 border: '1px solid rgba(255, 255, 255, 0.06)',
                 textAlign: 'left',
-                backdropFilter: 'blur(10px)'
+                backdropFilter: 'blur(10px)',
+                height: '100%'
               }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                    <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)' }}></i>
-                    Mobile v{updateData?.version || '1.2.6'} Release Notes
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '0.98rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0, whiteSpace: 'nowrap' }}>
+                    <i className="ri-smartphone-line" style={{ color: 'var(--accent-primary)', flexShrink: 0 }}></i>
+                    <span>Mobile v{updateData?.version || '1.2.6'} Release Notes</span>
                   </h4>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                     Released: {updatedAt}
                   </span>
                 </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
                   {releaseNotes}
-                </p>
-              </div>
-            )}
-
-            {/* iOS Release Notes */}
-            {iosReleaseNotes && (
-              <div className="release-notes-card" style={{
-                padding: '1.5rem 2rem',
-                borderRadius: '16px',
-                background: 'rgba(255, 255, 255, 0.02)',
-                border: '1px solid rgba(255, 255, 255, 0.06)',
-                textAlign: 'left',
-                backdropFilter: 'blur(10px)'
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                    <i className="ri-apple-fill" style={{ color: '#A2AAAD' }}></i>
-                    iOS v{iosVersion} Release Notes
-                  </h4>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    Released: {iosUpdatedAt}
-                  </span>
-                </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
-                  {iosReleaseNotes}
                 </p>
               </div>
             )}
@@ -522,23 +498,24 @@ export default function Home({ updateData }) {
             {/* TV Release Notes */}
             {tvData?.releaseNotes && (
               <div className="release-notes-card" style={{
-                padding: '1.5rem 2rem',
-                borderRadius: '16px',
+                padding: '1.35rem 1.25rem',
+                borderRadius: '18px',
                 background: 'rgba(255, 255, 255, 0.02)',
                 border: '1px solid rgba(255, 255, 255, 0.06)',
                 textAlign: 'left',
-                backdropFilter: 'blur(10px)'
+                backdropFilter: 'blur(10px)',
+                height: '100%'
               }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                    <i className="ri-tv-line" style={{ color: '#3DDC84' }}></i>
-                    Android TV v{tvData?.version || '1.2.6'} Release Notes
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '0.98rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0, whiteSpace: 'nowrap' }}>
+                    <i className="ri-tv-line" style={{ color: '#3DDC84', flexShrink: 0 }}></i>
+                    <span>Android TV v{tvData?.version || '1.2.6'} Release Notes</span>
                   </h4>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                     Released: {tvData?.updatedAt || '2026-10-12'}
                   </span>
                 </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
                   {tvData.releaseNotes}
                 </p>
               </div>
@@ -547,24 +524,51 @@ export default function Home({ updateData }) {
             {/* Desktop Release Notes */}
             {desktopReleaseNotes && (
               <div className="release-notes-card" style={{
-                padding: '1.5rem 2rem',
-                borderRadius: '16px',
+                padding: '1.35rem 1.25rem',
+                borderRadius: '18px',
                 background: 'rgba(255, 255, 255, 0.02)',
                 border: '1px solid rgba(255, 255, 255, 0.06)',
                 textAlign: 'left',
-                backdropFilter: 'blur(10px)'
+                backdropFilter: 'blur(10px)',
+                height: '100%'
               }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                    <i className="ri-computer-line" style={{ color: '#00A8E1' }}></i>
-                    Desktop v{desktopVersion} Release Notes
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '0.98rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0, whiteSpace: 'nowrap' }}>
+                    <i className="ri-computer-line" style={{ color: '#00A8E1', flexShrink: 0 }}></i>
+                    <span>Desktop v{desktopVersion} Release Notes</span>
                   </h4>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                     Released: {desktopUpdatedAt}
                   </span>
                 </div>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
                   {desktopReleaseNotes}
+                </p>
+              </div>
+            )}
+
+            {/* iOS Release Notes */}
+            {iosReleaseNotes && (
+              <div className="release-notes-card" style={{
+                padding: '1.35rem 1.25rem',
+                borderRadius: '18px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+                textAlign: 'left',
+                backdropFilter: 'blur(10px)',
+                height: '100%'
+              }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '0.98rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0, whiteSpace: 'nowrap' }}>
+                    <i className="ri-apple-fill" style={{ color: '#A2AAAD', flexShrink: 0 }}></i>
+                    <span>iOS v{iosVersion} Release Notes</span>
+                  </h4>
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                    Released: {iosUpdatedAt}
+                  </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
+                  {iosReleaseNotes}
                 </p>
               </div>
             )}

@@ -17,7 +17,7 @@
     "ipaUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa",
     "fileName": "AniWings-ios.ipa",
     "mandatory": true,
-    "releaseNotes": "AniWings iOS v1.2.6 Release - Brand new iOS app launched for AniWings with core mobile features included. 📱 iOS Users (AniWings-ios.ipa): Download the .ipa and install it using SideStore, AltStore, Sideloadly, Feather, or TrollStore.",
+    "releaseNotes": "AniWings iOS v1.2.6 Release - Brand new iOS app for AniWings with smooth streaming, episode cache, and modern UI.",
     "sideloadNote": "📱 iOS Users (AniWings-ios.ipa): Download the .ipa and install it using SideStore, AltStore, Sideloadly, Feather, or TrollStore.",
     "minVersion": "1.2.6",
     "fileSize": "53.3 MB",
