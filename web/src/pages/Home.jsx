@@ -22,6 +22,7 @@ export default function Home({ updateData }) {
   };
 
   const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk';
+  const DEFAULT_IOS_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa';
   const DEFAULT_TV_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-universal.apk';
   const DEFAULT_DESKTOP_SETUP_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6-setup.exe';
   const DEFAULT_DESKTOP_EXE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/desktop-v1.2.6/aniwings-desktop-windows-v1.2.6.exe';
@@ -35,6 +36,13 @@ export default function Home({ updateData }) {
   const fileSize = updateData?.fileSize || '176.7 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
+
+  const iosData = updateData?.ios;
+  const iosDownloadUrl = iosData?.ipaUrl || iosData?.url || updateData?.iosUrl || DEFAULT_IOS_RELEASE_URL;
+  const iosFileSize = iosData?.fileSize || '53.3 MB';
+  const iosVersion = iosData?.version || '1.2.6';
+  const iosUpdatedAt = iosData?.updatedAt || '2026-10-13';
+  const iosReleaseNotes = iosData?.releaseNotes;
 
   const tvData = updateData?.tv;
   const tvDownloadUrl = tvData?.url || updateData?.tvUrl || DEFAULT_TV_RELEASE_URL;
@@ -301,7 +309,7 @@ export default function Home({ updateData }) {
       <div className="section section-download reveal" id="section-download">
         <div className="container">
           <h2 className="section-title">Grab the Latest AniWings Release</h2>
-          <p className="section-desc">Over {formatCount(downloadStats.total)}+ downloads across Mobile, TV &amp; Desktop. Fetch the installable files below and launch your new premium anime experience.</p>
+          <p className="section-desc">Over {formatCount(downloadStats.total)}+ downloads across Android, iOS, TV &amp; Desktop. Fetch the installable files below and launch your new premium anime experience.</p>
           
           <div className="dl-ul">
             {/* Android Mobile */}
@@ -434,26 +442,33 @@ export default function Home({ updateData }) {
             </div>
 
             {/* iOS */}
-            <div className="dlu-item coming-soon">
-              <span className="coming-soon-badge">Coming Soon</span>
+            <div className="dlu-item">
               <div className="dlu-icon">
                 <i className="ri-apple-line"></i>
               </div>
               <h3 className="dlu-title">iOS (IPA)</h3>
-              <p className="dlu-desc">Installable IPA file configured for iOS devices (iPhone and iPad).</p>
+              <p className="dlu-desc">{iosFileSize} • {formatCount(downloadStats.ios || 0)}+ downloads • Select build for iPhone &amp; iPad.</p>
               <div className="dlu-detail">
-                <div className="dlu-btn">
-                  <button className="btn btn-lg btn-pre" disabled>
-                    <i className="ri-download-fill"></i>
-                    <span>Download for iOS</span>
-                  </button>
+                <div className="dlu-btn-group">
+                  <a 
+                    href={directDownloadUrl(iosDownloadUrl)} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-lg btn-pre dlu-split-btn"
+                  >
+                    <i className="ri-apple-fill"></i>
+                    <span>AniWings-ios.ipa <span className="btn-tag">iPhone &amp; iPad</span></span>
+                  </a>
                 </div>
+                <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '12px', lineHeight: '1.45', marginBottom: 0 }}>
+                  📱 <strong>iOS Users (AniWings-ios.ipa):</strong> Download the .ipa and install it using SideStore, AltStore, Sideloadly, Feather, or TrollStore.
+                </p>
               </div>
             </div>
           </div>
 
           {/* Release Notes Cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '2.5rem' }}>
             {/* Mobile Release Notes */}
             {releaseNotes && (
               <div className="release-notes-card" style={{
@@ -475,6 +490,31 @@ export default function Home({ updateData }) {
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
                   {releaseNotes}
+                </p>
+              </div>
+            )}
+
+            {/* iOS Release Notes */}
+            {iosReleaseNotes && (
+              <div className="release-notes-card" style={{
+                padding: '1.5rem 2rem',
+                borderRadius: '16px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
+                textAlign: 'left',
+                backdropFilter: 'blur(10px)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '0.75rem' }}>
+                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
+                    <i className="ri-apple-fill" style={{ color: '#A2AAAD' }}></i>
+                    iOS v{iosVersion} Release Notes
+                  </h4>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    Released: {iosUpdatedAt}
+                  </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+                  {iosReleaseNotes}
                 </p>
               </div>
             )}

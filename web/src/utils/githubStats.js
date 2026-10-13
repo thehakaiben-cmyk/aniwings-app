@@ -7,6 +7,7 @@ export const FALLBACK_STATS = {
   mobile: 8058,
   tv: 869,
   desktop: 27,
+  ios: 0,
 };
 
 export async function fetchLiveDownloadStats(initialFallback = FALLBACK_STATS) {
@@ -42,6 +43,7 @@ export async function fetchLiveDownloadStats(initialFallback = FALLBACK_STATS) {
     let mobile = 0;
     let tv = 0;
     let desktop = 0;
+    let ios = 0;
 
     releases.forEach((rel) => {
       (rel.assets || []).forEach((asset) => {
@@ -52,6 +54,8 @@ export async function fetchLiveDownloadStats(initialFallback = FALLBACK_STATS) {
           tv += count;
         } else if (name.includes('desktop') || name.endsWith('.exe') || name.endsWith('.zip') || name.endsWith('.appimage')) {
           desktop += count;
+        } else if (name.includes('ios') || name.endsWith('.ipa')) {
+          ios += count;
         } else {
           mobile += count;
         }
@@ -64,6 +68,7 @@ export async function fetchLiveDownloadStats(initialFallback = FALLBACK_STATS) {
       mobile: Math.max(mobile, initialFallback?.mobile || FALLBACK_STATS.mobile),
       tv: Math.max(tv, initialFallback?.tv || FALLBACK_STATS.tv),
       desktop: Math.max(desktop, initialFallback?.desktop || FALLBACK_STATS.desktop),
+      ios: Math.max(ios, initialFallback?.ios || FALLBACK_STATS.ios || 0),
     };
 
     if (typeof window !== 'undefined' && window.localStorage) {

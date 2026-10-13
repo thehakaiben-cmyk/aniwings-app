@@ -4,12 +4,26 @@
   "universalUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-universal.apk",
   "arm64Url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-arm64-v8a.apk",
   "armv7Url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-armeabi-v7a.apk",
+  "iosUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa",
   "mandatory": true,
   "releaseNotes": "AniWings v1.2.6 Update - Fixed bugs, episode cache faster and some UI changes done.",
   "minVersion": "1.2.6",
   "fileSize": "176.7 MB",
   "updatedAt": "2026-10-10",
   "appName": "AniWings",
+  "ios": {
+    "version": "1.2.6",
+    "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa",
+    "ipaUrl": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa",
+    "fileName": "AniWings-ios.ipa",
+    "mandatory": true,
+    "releaseNotes": "AniWings iOS v1.2.6 Release - Brand new iOS app launched for AniWings with core mobile features included. 📱 iOS Users (AniWings-ios.ipa): Download the .ipa and install it using SideStore, AltStore, Sideloadly, Feather, or TrollStore.",
+    "sideloadNote": "📱 iOS Users (AniWings-ios.ipa): Download the .ipa and install it using SideStore, AltStore, Sideloadly, Feather, or TrollStore.",
+    "minVersion": "1.2.6",
+    "fileSize": "53.3 MB",
+    "updatedAt": "2026-10-13",
+    "appName": "AniWings iOS"
+  },
   "tv": {
     "version": "1.2.6",
     "url": "https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/tv-v1.2.6/aniwings-tv-v1.2.6-universal.apk",
@@ -46,6 +60,7 @@
     "total": 8954,
     "mobile": 8058,
     "tv": 869,
-    "desktop": 27
+    "desktop": 27,
+    "ios": 0
   }
 }

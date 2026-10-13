@@ -4,25 +4,26 @@
 
 # AniWings 🪽
 
-### Modern Anime Streaming for Android, Android TV & Desktop
+### Modern Anime Streaming for Android, iOS, Android TV & Desktop
 
-**Clean UI · SUB & DUB · Extensions · Downloads · Anime Tracking · TV & Desktop Support**
+**Clean UI · SUB & DUB · Extensions · Downloads · Anime Tracking · iOS, TV & Desktop Support**
 
 <br>
 
-[![Total Downloads](https://img.shields.io/badge/Total_Downloads-8.6k+-FF2A54?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
-[![Mobile Downloads](https://img.shields.io/badge/Mobile-7.7k+_Downloads-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
-[![TV Downloads](https://img.shields.io/badge/Android_TV-800+_Downloads-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![Total Downloads](https://img.shields.io/badge/Total_Downloads-8.9k+-FF2A54?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![Mobile Downloads](https://img.shields.io/badge/Mobile-8.0k+_Downloads-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
+[![iOS](https://img.shields.io/badge/iOS-New_Release-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa)
+[![TV Downloads](https://img.shields.io/badge/Android_TV-869+_Downloads-00A8E1?style=for-the-badge&logo=androidtv&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
 [![Desktop](https://img.shields.io/badge/Desktop-New_Release-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
 [![Website](https://img.shields.io/badge/Official_Website-Visit-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ani-wings.web.app/)
 
 <br>
 
 [![GitHub Release](https://img.shields.io/github/v/release/thehakaiben-cmyk/aniwings-app?style=flat-square&label=Latest%20Release)](https://github.com/thehakaiben-cmyk/aniwings-app/releases)
-![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Android%20TV%20%7C%20Desktop-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Android%20TV%20%7C%20Desktop-blue?style=flat-square)
 ![Extensions](https://img.shields.io/badge/Extensions-Mobile-purple?style=flat-square)
 ![Ads](https://img.shields.io/badge/Ads-Optional-success?style=flat-square)
-![iOS](https://img.shields.io/badge/iOS-Coming%20Soon-yellow?style=flat-square)
+![iOS](https://img.shields.io/badge/iOS-Available%20(.ipa)-success?style=flat-square)
 
 <br>
 
@@ -39,6 +40,7 @@ Total download counts breakdown across all official releases:
 | Device / Platform | Total Downloads | Latest Version | Supported Systems & Formats |
 | :--- | :---: | :---: | :--- |
 | 📱 **Android Mobile** | **8,058+** (~8.1k) | `v1.2.6` | Universal APK, ARM64-v8a APK, armeabi-v7a APK |
+| 🍎 **iOS (iPhone & iPad)** | **New** | `v1.2.6` | Universal iOS Package (`.ipa`) |
 | 📺 **Android TV** | **869+** | `v1.2.6` | Universal TV APK, ARM64 TV APK, armeabi-v7a TV APK |
 | 💻 **Desktop (PC)** | **27+** *(New)* | `v1.2.6` | Windows Setup (.exe), Standalone (.exe), Portable (.zip), Linux (.AppImage) |
 | 🌟 **Total Across Devices** | **8,954+** (~9.0k) | — | **All Supported Platforms** |
@@ -47,7 +49,7 @@ Total download counts breakdown across all official releases:
 
 ## 🪽 What is AniWings?
 
-**AniWings** is a modern anime streaming client designed for **Android phones, tablets, Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and Desktop (Windows & Linux)**.
+**AniWings** is a modern anime streaming client designed for **Android phones, tablets, iOS (iPhone & iPad), Android TV, Google TV, Amazon Fire TV, NVIDIA Shield TV, and Desktop (Windows & Linux)**.
 
 Discover anime, browse seasonal releases, follow airing schedules, manage your library, track episodes, use multiple providers, install provider extensions, download supported episodes, and watch through an interface designed specifically for mobile devices, televisions, and desktop PCs.
 
@@ -61,6 +63,7 @@ Discover anime, browse seasonal releases, follow airing schedules, manage your l
 - 🔌 **Extension Support** — Expand AniWings Mobile with additional provider extensions.
 - ⬇️ **Offline Downloads** — Download supported episodes for offline viewing.
 - 📊 **Anime Tracking** — Support for AniList, MyAnimeList, Kitsu, and AniDB.
+- 🍎 **iOS Support** — Dedicated `.ipa` build for iPhone and iPad.
 - 📺 **Dedicated TV Experience** — TV-optimized layouts with full D-pad navigation.
 - 💻 **Desktop Experience** — High performance native client for Windows and Linux.
 - 🗣️ **SUB & DUB** — Access subtitled and dubbed sources where available.
@@ -112,13 +115,15 @@ Native desktop builds for **Windows 10/11 (64-bit)** and **Linux distributions**
 
 ---
 
-## 🍎 iOS
+## 🍎 iOS (iPhone & iPad) — v1.2.6
 
-| Platform | File Format | Status |
-| --- | :---: | :---: |
-| **iPhone & iPad** | `.ipa` | 🚧 In Development |
+Official installable `.ipa` package for **iPhone and iPad** devices.
 
-iOS support is planned for a future AniWings release.
+| Build | Device & Format | Download |
+| --- | --- | :---: |
+| **AniWings iOS (.ipa)** | iPhone & iPad (Universal iOS Package) | [![Download](https://img.shields.io/badge/Download-iOS_IPA-000000?style=flat-square&logo=apple&logoColor=white)](https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.2.6/AniWings-ios.ipa) |
+
+> 📱 **iOS Users (`AniWings-ios.ipa`):** Download the `.ipa` and install it using **SideStore**, **AltStore**, **Sideloadly**, **Feather**, or **TrollStore**.
 
 ---
 
@@ -381,6 +386,26 @@ aniwings-tv-v1.2.6-universal.apk
 
 </details>
 
+<br>
+
+<details>
+
+<summary><b>🍎 iOS (iPhone & iPad)</b></summary>
+
+<br>
+
+1. Download **`AniWings-ios.ipa`** from the [Downloads](#-downloads) section.
+2. Install the `.ipa` using your preferred iOS sideloading utility:
+   - **SideStore**
+   - **AltStore**
+   - **Sideloadly**
+   - **Feather**
+   - **TrollStore**
+3. Trust the developer certificate in **Settings → General → VPN & Device Management** (if required by your signing method).
+4. Launch **AniWings** from your Home Screen.
+
+</details>
+
 ---
 
 # 🖥️ Platform Support
@@ -389,13 +414,13 @@ aniwings-tv-v1.2.6-universal.apk
 | --- | :---: | :--- |
 | 📱 Android Phone | ✅ | Universal, ARM64, ARMv7 APKs |
 | 📱 Android Tablet | ✅ | Universal, ARM64, ARMv7 APKs |
+| 🍎 iPhone & iPad | ✅ | Universal iOS (`.ipa`) via SideStore, AltStore, Sideloadly, Feather, or TrollStore |
 | 📺 Android TV | ✅ | TV-optimized Universal, ARM64, ARMv7 APKs |
 | 📺 Google TV | ✅ | Full TV experience |
 | 🔥 Amazon Fire TV | ✅ | Fire OS compatible TV build |
 | 🛡️ NVIDIA Shield TV | ✅ | TV build |
 | 💻 Windows PC (10 & 11) | ✅ | Installer (.exe), Standalone (.exe), Portable (.zip) |
 | 🐧 Linux PC (x86_64) | ✅ | Universal Linux (.AppImage) |
-| 🍎 iPhone & iPad | 🚧 Coming Soon | iOS (.ipa) in development |
 
 ---
 
